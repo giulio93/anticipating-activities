@@ -1,0 +1,160 @@
+SPLIT 1: RNN  ==> OBS:20% 
+MoC  0.1125
+MoC  0.1017
+MoC  0.1037
+MoC  0.0720
+SPLIT 1: RNN  ==> OBS:30% 
+MoC  0.1823
+MoC  0.1492
+MoC  0.1368
+MoC  0.1027
+('Epoch', 1, 'completed out of', 20, 'training Acc: 0.22')
+('Epoch', 2, 'completed out of', 20, 'training Acc: 0.60')
+('Epoch', 3, 'completed out of', 20, 'training Acc: 0.64')
+('Epoch', 4, 'completed out of', 20, 'training Acc: 0.67')
+('Epoch', 5, 'completed out of', 20, 'training Acc: 0.71')
+('Epoch', 6, 'completed out of', 20, 'training Acc: 0.75')
+('Epoch', 7, 'completed out of', 20, 'training Acc: 0.79')
+('Epoch', 8, 'completed out of', 20, 'training Acc: 0.82')
+('Epoch', 9, 'completed out of', 20, 'training Acc: 0.85')
+('Epoch', 10, 'completed out of', 20, 'training Acc: 0.87')
+('Epoch', 11, 'completed out of', 20, 'training Acc: 0.88')
+('Epoch', 12, 'completed out of', 20, 'training Acc: 0.89')
+('Epoch', 13, 'completed out of', 20, 'training Acc: 0.89')
+('Epoch', 14, 'completed out of', 20, 'training Acc: 0.90')
+('Epoch', 15, 'completed out of', 20, 'training Acc: 0.90')
+('Epoch', 16, 'completed out of', 20, 'training Acc: 0.90')
+('Epoch', 17, 'completed out of', 20, 'training Acc: 0.91')
+('Epoch', 18, 'completed out of', 20, 'training Acc: 0.91')
+('Epoch', 19, 'completed out of', 20, 'training Acc: 0.91')
+('Epoch', 20, 'completed out of', 20, 'training Acc: 0.91')
+SPLIT 1: CNN  ==> OBS:20% 
+MoC  0.1513
+MoC  0.1457
+MoC  0.1408
+MoC  0.1425
+SPLIT 1: CNN  ==> OBS:30% 
+MoC  0.2202
+MoC  0.2011
+MoC  0.2249
+MoC  0.2129
+SPLIT 2: RNN  ==> OBS:20% 
+MoC  0.1559
+MoC  0.1251
+MoC  0.1042
+MoC  0.0733
+SPLIT 2: RNN  ==> OBS:30% 
+MoC  0.2237
+MoC  0.1463
+MoC  0.0917
+MoC  0.0760
+('Epoch', 1, 'completed out of', 20, 'training Acc: 0.19')
+('Epoch', 2, 'completed out of', 20, 'training Acc: 0.58')
+('Epoch', 3, 'completed out of', 20, 'training Acc: 0.63')
+('Epoch', 4, 'completed out of', 20, 'training Acc: 0.66')
+('Epoch', 5, 'completed out of', 20, 'training Acc: 0.69')
+('Epoch', 6, 'completed out of', 20, 'training Acc: 0.72')
+('Epoch', 7, 'completed out of', 20, 'training Acc: 0.76')
+('Epoch', 8, 'completed out of', 20, 'training Acc: 0.79')
+('Epoch', 9, 'completed out of', 20, 'training Acc: 0.82')
+('Epoch', 10, 'completed out of', 20, 'training Acc: 0.84')
+('Epoch', 11, 'completed out of', 20, 'training Acc: 0.86')
+('Epoch', 12, 'completed out of', 20, 'training Acc: 0.88')
+('Epoch', 13, 'completed out of', 20, 'training Acc: 0.89')
+('Epoch', 14, 'completed out of', 20, 'training Acc: 0.90')
+('Epoch', 15, 'completed out of', 20, 'training Acc: 0.90')
+('Epoch', 16, 'completed out of', 20, 'training Acc: 0.91')
+('Epoch', 17, 'completed out of', 20, 'training Acc: 0.91')
+('Epoch', 18, 'completed out of', 20, 'training Acc: 0.91')
+('Epoch', 19, 'completed out of', 20, 'training Acc: 0.91')
+('Epoch', 20, 'completed out of', 20, 'training Acc: 0.92')
+SPLIT 2: CNN  ==> OBS:20% 
+MoC  0.1825
+MoC  0.1534
+MoC  0.1457
+MoC  0.1325
+SPLIT 2: CNN  ==> OBS:30% 
+MoC  0.2122
+MoC  0.1893
+MoC  0.1830
+MoC  0.1649
+SPLIT 3: RNN  ==> OBS:20% 
+MoC  0.1597
+MoC  0.1707
+MoC  0.1441
+MoC  0.1124
+SPLIT 3: RNN  ==> OBS:30% 
+MoC  0.2095
+MoC  0.1530
+MoC  0.1321
+MoC  0.1188
+('Epoch', 1, 'completed out of', 20, 'training Acc: 0.19')
+('Epoch', 2, 'completed out of', 20, 'training Acc: 0.58')
+('Epoch', 3, 'completed out of', 20, 'training Acc: 0.64')
+('Epoch', 4, 'completed out of', 20, 'training Acc: 0.67')
+('Epoch', 5, 'completed out of', 20, 'training Acc: 0.71')
+('Epoch', 6, 'completed out of', 20, 'training Acc: 0.75')
+('Epoch', 7, 'completed out of', 20, 'training Acc: 0.78')
+('Epoch', 8, 'completed out of', 20, 'training Acc: 0.81')
+('Epoch', 9, 'completed out of', 20, 'training Acc: 0.84')
+('Epoch', 10, 'completed out of', 20, 'training Acc: 0.86')
+('Epoch', 11, 'completed out of', 20, 'training Acc: 0.87')
+('Epoch', 12, 'completed out of', 20, 'training Acc: 0.88')
+('Epoch', 13, 'completed out of', 20, 'training Acc: 0.89')
+('Epoch', 14, 'completed out of', 20, 'training Acc: 0.90')
+('Epoch', 15, 'completed out of', 20, 'training Acc: 0.90')
+('Epoch', 16, 'completed out of', 20, 'training Acc: 0.91')
+('Epoch', 17, 'completed out of', 20, 'training Acc: 0.91')
+('Epoch', 18, 'completed out of', 20, 'training Acc: 0.91')
+('Epoch', 19, 'completed out of', 20, 'training Acc: 0.91')
+('Epoch', 20, 'completed out of', 20, 'training Acc: 0.92')
+SPLIT 3: CNN  ==> OBS:20% 
+MoC  0.1806
+MoC  0.1605
+MoC  0.1628
+MoC  0.1499
+SPLIT 3: CNN  ==> OBS:30% 
+MoC  0.2077
+MoC  0.1909
+MoC  0.1922
+MoC  0.1674
+SPLIT 4: RNN  ==> OBS:20% 
+MoC  0.1342
+MoC  0.1300
+MoC  0.0912
+MoC  0.0720
+SPLIT 4: RNN  ==> OBS:30% 
+MoC  0.1757
+MoC  0.1155
+MoC  0.0865
+MoC  0.0648
+('Epoch', 1, 'completed out of', 20, 'training Acc: 0.16')
+('Epoch', 2, 'completed out of', 20, 'training Acc: 0.60')
+('Epoch', 3, 'completed out of', 20, 'training Acc: 0.65')
+('Epoch', 4, 'completed out of', 20, 'training Acc: 0.67')
+('Epoch', 5, 'completed out of', 20, 'training Acc: 0.69')
+('Epoch', 6, 'completed out of', 20, 'training Acc: 0.72')
+('Epoch', 7, 'completed out of', 20, 'training Acc: 0.75')
+('Epoch', 8, 'completed out of', 20, 'training Acc: 0.78')
+('Epoch', 9, 'completed out of', 20, 'training Acc: 0.81')
+('Epoch', 10, 'completed out of', 20, 'training Acc: 0.83')
+('Epoch', 11, 'completed out of', 20, 'training Acc: 0.85')
+('Epoch', 12, 'completed out of', 20, 'training Acc: 0.86')
+('Epoch', 13, 'completed out of', 20, 'training Acc: 0.87')
+('Epoch', 14, 'completed out of', 20, 'training Acc: 0.88')
+('Epoch', 15, 'completed out of', 20, 'training Acc: 0.88')
+('Epoch', 16, 'completed out of', 20, 'training Acc: 0.89')
+('Epoch', 17, 'completed out of', 20, 'training Acc: 0.89')
+('Epoch', 18, 'completed out of', 20, 'training Acc: 0.90')
+('Epoch', 19, 'completed out of', 20, 'training Acc: 0.90')
+('Epoch', 20, 'completed out of', 20, 'training Acc: 0.90')
+SPLIT 4: CNN  ==> OBS:20% 
+MoC  0.1822
+MoC  0.1718
+MoC  0.1529
+MoC  0.1438
+SPLIT 4: CNN  ==> OBS:30% 
+MoC  0.2264
+MoC  0.2043
+MoC  0.2140
+MoC  0.1745
