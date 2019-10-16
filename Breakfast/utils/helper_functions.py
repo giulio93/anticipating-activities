@@ -7,6 +7,8 @@ import colorlover as cl
 import json
 from collections import defaultdict
 import random
+from plotly.subplots import make_subplots
+
 '''
 'read a mapping dictionary between the action labels and their IDs
 '''
@@ -86,10 +88,12 @@ def draw_plot(label_seq_recog,length_seq_recog,vid_recog,label_seq,length_seq,vi
 
     total =0
     total_recog = 0
+    color_used = []
 
     for i in range(len(label_seq)):
         appo[str(i)]['range'] = [total, total +length_seq[i]]
         appo[str(i)]['color'] = "rgb("+str((10*random.randint(1,48))%255)+","+str((5*random.randint(1,48))%255)+","+str((7*random.randint(1,48))%255)+")"
+        color_used.append(appo[str(i)]['color'])
         total += length_seq[i]
 
     steps = []
@@ -97,28 +101,49 @@ def draw_plot(label_seq_recog,length_seq_recog,vid_recog,label_seq,length_seq,vi
         steps.append(appo[a])
 
     for i in range(len(label_seq_recog)):
-        appo_recog[str(i)]['range'] = [total_recog, total_recog +length_seq_recog[i]]
-        appo_recog[str(i)]['color'] = appo[str(i)]['color']
-        total_recog += length_seq_recog[i]
+
+        if(label_seq_recog[i]== label_seq[i]):
+
+            appo_recog[str(i)]['range'] = [total_recog, total_recog +length_seq_recog[i]]
+            appo_recog[str(i)]['color'] = appo[str(i)]['color']
+            total_recog += length_seq_recog[i]
+        else:
+            appo_recog[str(i)]['range'] = [total_recog, total_recog +length_seq_recog[i]]
+            new_color = appo['0']['color']
+            while(sum([d== new_color for d in color_used])>0):
+                new_color = "rgb("+str((10*random.randint(1,48))%255)+","+str((5*random.randint(1,48))%255)+","+str((7*random.randint(1,48))%255)+")"
+            
+            appo_recog[str(i)]['color'] = new_color
+            total_recog += length_seq_recog[i]
+            color_used.append(new_color)
 
     steps_recog = []
     for a in appo_recog:
         steps_recog.append(appo_recog[a])
 
+    fig = make_subplots(
+    rows=3, cols=1,
+    vertical_spacing=0.03,
+    specs=[[{"type": "table"}],
+           [{"type": "indicator"}],
+           [{"type": "indicator"}]]
+    )
+
     fig.add_trace(go.Indicator(
         mode = "gauge", 
         title = {'text' :"<b>"+vid.split('/')[3]+"</b>"},
-        domain = {'x': [0.25, 1], 'y': [0.4 , 0.6]}, 
+        #domain = {'x': [0.25, 1], 'y': [0.4 , 0.6]}, 
         gauge = {
             'shape': "bullet", 
             'axis': {'range': [None, total]}, 
             'steps': steps, 
-            }))
+            }),
+            row=3, col=1)
 
     fig.add_trace(go.Indicator(
         mode = "gauge", 
         title = {'text' :"<b>"+vid_recog.split('/')[5]+"</b>"},
-        domain = {'x': [0.25, 1], 'y': [0.7, 0.9]},
+        #domain = {'x': [0.25, 1], 'y': [0.7, 0.9]},
         gauge = {
             'shape': "bullet", 
             'axis': {'range': [None, total]},
@@ -127,12 +152,33 @@ def draw_plot(label_seq_recog,length_seq_recog,vid_recog,label_seq,length_seq,vi
                 'thickness': 1, 'value': total * float(vid_recog.split('/')[4].split('-')[0][3:])
             }, 
             'steps': steps_recog, 
-            }))
+            }),
+            row=2, col=1)
 
 
+
+
+    fig.add_trace(
+    go.Table(
+            header=dict(
+            values=["Length GT", "Label GT","Length", "Label"],
+            font=dict(size=10),
+            #align="left"
+        ),
+        cells=dict(
+            values=[length_seq,label_seq,length_seq_recog,label_seq_recog],
+            font=dict(size=10),
+            height=20
+            #align = "left"
+            )
+    ),
+    row=1, col=1
+)
      
     #fig.update_layout(height = 250,width =1532,  margin=dict(l=250))
     fig.update_layout(height = 400 , margin = {'t':0, 'b':0, 'l':0,'pad':0})
+    
+
     fig.show()
     #fig.write_image("~/Pictures/"+vid_recog.split('/')[5]+".png")
    
