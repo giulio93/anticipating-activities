@@ -1,0 +1,1 @@
+SPLIT 1: RNN  ==> OBS:20% 

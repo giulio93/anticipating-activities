@@ -7,6 +7,13 @@ import colorlover as cl
 import json
 from collections import defaultdict
 import random
+from plotly.subplots import make_subplots
+import os
+from IPython.display import Image  
+import plotly.io as pio
+
+
+
 '''
 'read a mapping dictionary between the action labels and their IDs
 '''
@@ -54,7 +61,7 @@ def write_predictions(path, f_name, recognition):
     f_ptr.write("### Frame level recognition: ###\n")
     f_ptr.write(' '.join(recognition))
     
-    f_ptr.close()
+    #f_ptr.close()
     
 '''
 'Get the sequence of labels and length for a givien frame-wise action labels
@@ -75,21 +82,83 @@ def get_label_length_seq(content):
 
 
 '''
+'Separate videos by lenght'
+'''
+def separator(filename,obs_p=0.5,path="./data",frame_rate=15):
+   
+    filename = filename.split('\n')[0]
+    file_ptr = open(filename, 'r') 
+    frames = file_ptr.read().split('\n')[:-1]
+    duration = float((len(frames)*obs_p)/frame_rate)
+    filename = filename.split('/')[3]
+  
+    if duration <= 21:
+        a=''
+        if os.path.isfile(path+"/"+"20.txt"):
+            f_ptr1 = open(path+"/"+"20.txt","r")
+            a = f_ptr1.readlines()
+            f_ptr1.close()
+            f_ptr1 = open(path+"/"+"20.txt","w")
+            f_ptr1.writelines(a) 
+            if filename+"\n" not in a:
+                f_ptr1.write("\n") 
+                f_ptr1.write(filename)
+            f_ptr1.close()
+        else:
+            f_ptr1 = open(path+"/"+"20.txt","w")
+            f_ptr1.write(filename)
+            f_ptr1.close()
+    if 21 <duration< 41:
+        a=''
+        if os.path.isfile(path+"/"+"2040.txt"):
+            f_ptr2 = open(path+"/"+"2040.txt","r")
+            a = f_ptr2.readlines()
+            f_ptr2.close()
+            f_ptr2 = open(path+"/"+"2040.txt","w")
+            f_ptr2.writelines(a)         
+            if filename+"\n" not in a: 
+                f_ptr2.write("\n")            
+                f_ptr2.write(filename)
+            f_ptr2.close()
+        else:
+            f_ptr2 = open(path+"/"+"2040.txt","w")
+            f_ptr2.write(filename)
+            f_ptr2.close()
+    
+    if duration >= 41:
+        a=''
+        if os.path.isfile(path+"/"+"40.txt"):
+            f_ptr3 = open(path+"/"+"40.txt","r")
+            a = f_ptr3.readlines()
+            f_ptr3.close()
+            f_ptr3 = open(path+"/"+"40.txt","w")
+            f_ptr3.writelines(a) 
+            if filename+"\n" not in a: 
+                f_ptr3.write("\n")            
+                f_ptr3.write(filename)
+            f_ptr3.close()
+        else:
+            f_ptr3 = open(path+"/"+"40.txt","w")
+            f_ptr3.write(filename)
+            f_ptr3.close()
+
+
+'''
 'Draw the color action graph
 '''
-def draw_plot(label_seq_recog,length_seq_recog,vid_recog,label_seq,length_seq,vid):
+def draw_plot(label_seq_recog,length_seq_recog,vid_recog,label_seq,length_seq,vid,color_dict,fig_name,dest):
 
-
+    if not os.path.exists(dest):
+        os.mkdir(dest)
     fig = go.Figure()
     appo=defaultdict(dict)
     appo_recog=defaultdict(dict)
-
     total =0
     total_recog = 0
 
     for i in range(len(label_seq)):
         appo[str(i)]['range'] = [total, total +length_seq[i]]
-        appo[str(i)]['color'] = "rgb("+str((10*random.randint(1,48))%255)+","+str((5*random.randint(1,48))%255)+","+str((7*random.randint(1,48))%255)+")"
+        appo[str(i)]['color'] = color_dict[label_seq[i]]
         total += length_seq[i]
 
     steps = []
@@ -98,27 +167,39 @@ def draw_plot(label_seq_recog,length_seq_recog,vid_recog,label_seq,length_seq,vi
 
     for i in range(len(label_seq_recog)):
         appo_recog[str(i)]['range'] = [total_recog, total_recog +length_seq_recog[i]]
-        appo_recog[str(i)]['color'] = appo[str(i)]['color']
+        appo_recog[str(i)]['color'] = color_dict[label_seq_recog[i]]
         total_recog += length_seq_recog[i]
+
 
     steps_recog = []
     for a in appo_recog:
         steps_recog.append(appo_recog[a])
 
+    fig = make_subplots(
+    rows=3, cols=1,
+    column_widths=[1000],
+    row_heights=[30,30,600],
+    vertical_spacing=0.10,
+    specs=[[{"type": "indicator"}],
+           [{"type": "indicator"}],
+           [{"type": "table"}]]
+    )
+
     fig.add_trace(go.Indicator(
         mode = "gauge", 
-        title = {'text' :"<b>"+vid.split('/')[3]+"</b>"},
-        domain = {'x': [0.25, 1], 'y': [0.4 , 0.6]}, 
+        title = {'text' :"<b> GT </b>"},
+        domain = {'x': [0.25, 0.50], 'y': [0.4 , 0.6]}, 
         gauge = {
             'shape': "bullet", 
             'axis': {'range': [None, total]}, 
             'steps': steps, 
-            }))
+            }),
+            row=2, col=1)
 
     fig.add_trace(go.Indicator(
         mode = "gauge", 
-        title = {'text' :"<b>"+vid_recog.split('/')[5]+"</b>"},
-        domain = {'x': [0.25, 1], 'y': [0.7, 0.9]},
+        title = {'text' :"<b> R </b>"},
+        domain = {'x': [0.25, 0.50], 'y': [0.7, 0.9]},
         gauge = {
             'shape': "bullet", 
             'axis': {'range': [None, total]},
@@ -127,12 +208,36 @@ def draw_plot(label_seq_recog,length_seq_recog,vid_recog,label_seq,length_seq,vi
                 'thickness': 1, 'value': total * float(vid_recog.split('/')[4].split('-')[0][3:])
             }, 
             'steps': steps_recog, 
-            }))
+            }),
+            row=1, col=1)
 
 
+
+
+    fig.add_trace(
+    go.Table(
+            header=dict(
+            values=["Length GT ", "Label GT ","Length", "Label "],
+            font=dict(size=10),
+            #align="left"
+        ),
+        cells=dict(
+            values=[length_seq,label_seq,length_seq_recog,label_seq_recog,],
+            font=dict(size=10),
+            #align = "left"
+            )
+    ),
+    row=3, col=1
+)
      
     #fig.update_layout(height = 250,width =1532,  margin=dict(l=250))
-    fig.update_layout(height = 400 , margin = {'t':0, 'b':0, 'l':0,'pad':0})
-    fig.show()
-    #fig.write_image("~/Pictures/"+vid_recog.split('/')[5]+".png")
+    #fig.update_layout(height = 400 , margin = {'t':0, 'b':0, 'l':0,'pad':0})
+    
+
+    #fig.show()
+    #fig.write_image("./images/"+fig_name+".png")
+    # pio.orca.config.default_width = 1200
+    # pio.orca.config.default_height = 600
+    # pio.orca.config.save()
+    fig.write_image(dest+"/"+fig_name+".png",width=2046,height=1000)
    

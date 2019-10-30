@@ -1,0 +1,2419 @@
+SPLIT 1: RNN  ==> OBS:20% 
+MoC  0.3712
+AccuracyTOT  0.2810
+RecallTOT  0.3341
+PrecisionTOT  0.3543
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.33      0.16      0.22      2047
+  place_tomato_into_bowl       0.71      0.71      0.71       396
+              cut_cheese       0.56      0.19      0.28      1413
+  place_cheese_into_bowl       0.00      0.00      0.00       241
+             cut_lettuce       0.20      0.64      0.30       998
+ place_lettuce_into_bowl       0.00      0.00      0.00         0
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.40      1.00      0.57       942
+           peel_cucumber       1.00      0.08      0.15      3657
+            cut_cucumber       0.23      0.46      0.31       439
+place_cucumber_into_bowl       0.12      0.10      0.11       586
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.28      0.28      0.28     10719
+               macro avg       0.19      0.18      0.14     10719
+            weighted avg       0.57      0.28      0.25     10719
+
+MoC  0.2782
+AccuracyTOT  0.1747
+RecallTOT  0.2782
+PrecisionTOT  0.2534
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.25      0.12      0.16      5186
+  place_tomato_into_bowl       0.26      0.22      0.24      1276
+              cut_cheese       0.15      0.14      0.14      1966
+  place_cheese_into_bowl       0.00      0.00      0.00       241
+             cut_lettuce       0.11      0.22      0.15      2867
+ place_lettuce_into_bowl       0.04      1.00      0.08       265
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.40      1.00      0.57       942
+           peel_cucumber       1.00      0.06      0.11      5279
+            cut_cucumber       0.23      0.09      0.13      2179
+place_cucumber_into_bowl       0.35      0.22      0.27      1174
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00        67
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.17      0.17      0.17     21442
+               macro avg       0.15      0.16      0.10     21442
+            weighted avg       0.41      0.17      0.17     21442
+
+MoC  0.2315
+AccuracyTOT  0.1625
+RecallTOT  0.2315
+PrecisionTOT  0.2573
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.24      0.09      0.13      6928
+  place_tomato_into_bowl       0.16      0.18      0.17      1572
+              cut_cheese       0.13      0.21      0.16      3566
+  place_cheese_into_bowl       0.00      0.00      0.00       241
+             cut_lettuce       0.10      0.19      0.13      4508
+ place_lettuce_into_bowl       0.09      0.47      0.15      1572
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.40      1.00      0.57       942
+           peel_cucumber       1.00      0.04      0.08      7430
+            cut_cucumber       0.23      0.06      0.09      3540
+place_cucumber_into_bowl       0.49      0.31      0.38      1797
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00        67
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.16      0.16      0.16     32163
+               macro avg       0.15      0.13      0.10     32163
+            weighted avg       0.39      0.16      0.14     32163
+
+MoC  0.2119
+AccuracyTOT  0.1299
+RecallTOT  0.1589
+PrecisionTOT  0.0987
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.13      0.06      0.08     10592
+  place_tomato_into_bowl       0.10      0.11      0.10      2590
+              cut_cheese       0.19      0.26      0.22      7880
+  place_cheese_into_bowl       0.06      0.07      0.06      1735
+             cut_lettuce       0.09      0.16      0.12      5337
+ place_lettuce_into_bowl       0.09      0.46      0.15      1621
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00       731
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.40      1.00      0.57       942
+           peel_cucumber       0.10      0.03      0.04     11209
+            cut_cucumber       0.11      0.04      0.06      6566
+place_cucumber_into_bowl       0.16      0.23      0.19      2481
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.14      0.14      0.14      1925
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.13      0.13      0.13     53609
+               macro avg       0.08      0.13      0.09     53609
+            weighted avg       0.13      0.13      0.11     53609
+
+SPLIT 1: RNN  ==> OBS:30% 
+MoC  0.2495
+AccuracyTOT  0.2832
+RecallTOT  0.2246
+PrecisionTOT  0.2479
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.44      0.29      0.35      3138
+  place_tomato_into_bowl       0.00      0.00      0.00       879
+              cut_cheese       1.00      0.52      0.68       553
+  place_cheese_into_bowl       0.00      0.00      0.00         0
+             cut_lettuce       0.32      0.27      0.29      1868
+ place_lettuce_into_bowl       0.03      0.32      0.06       265
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.58      0.73      0.65      1621
+            cut_cucumber       0.00      0.00      0.00      1740
+place_cucumber_into_bowl       0.10      0.12      0.11       588
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00        67
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.28      0.28      0.28     10719
+               macro avg       0.13      0.12      0.11     10719
+            weighted avg       0.33      0.28      0.29     10719
+
+MoC  0.1642
+AccuracyTOT  0.2296
+RecallTOT  0.1478
+PrecisionTOT  0.1947
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.23      0.18      0.20      4881
+  place_tomato_into_bowl       0.00      0.00      0.00      1176
+              cut_cheese       0.16      0.22      0.18      2153
+  place_cheese_into_bowl       0.00      0.00      0.00         0
+             cut_lettuce       0.38      0.44      0.41      3510
+ place_lettuce_into_bowl       0.02      0.05      0.03      1572
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.56      0.34      0.43      3772
+            cut_cucumber       0.50      0.18      0.27      3101
+place_cucumber_into_bowl       0.10      0.06      0.07      1210
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00        67
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.23      0.23      0.23     21442
+               macro avg       0.10      0.08      0.08     21442
+            weighted avg       0.31      0.23      0.25     21442
+
+MoC  0.2202
+AccuracyTOT  0.2479
+RecallTOT  0.2002
+PrecisionTOT  0.2059
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.19      0.20      0.20      6740
+  place_tomato_into_bowl       0.00      0.00      0.00      1717
+              cut_cheese       0.35      0.33      0.34      5438
+  place_cheese_into_bowl       0.00      0.00      0.00      1136
+             cut_lettuce       0.35      0.44      0.39      3510
+ place_lettuce_into_bowl       0.02      0.05      0.03      1621
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.53      0.38      0.44      6271
+            cut_cucumber       0.27      0.13      0.18      4212
+place_cucumber_into_bowl       0.10      0.06      0.07      1210
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.45      0.61      0.52       308
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.25      0.25      0.25     32163
+               macro avg       0.12      0.12      0.11     32163
+            weighted avg       0.29      0.25      0.26     32163
+
+MoC  0.1030
+AccuracyTOT  0.1856
+RecallTOT  0.0915
+PrecisionTOT  0.1112
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.22      0.23      0.23      8675
+  place_tomato_into_bowl       0.00      0.00      0.00      2580
+              cut_cheese       0.31      0.26      0.28      6797
+  place_cheese_into_bowl       0.00      0.00      0.00      1818
+             cut_lettuce       0.35      0.25      0.29      6301
+ place_lettuce_into_bowl       0.02      0.04      0.03      2202
+                add_salt       0.01      0.02      0.01       272
+             add_vinegar       0.00      0.00      0.00      1690
+                 add_oil       0.17      0.14      0.15      2155
+              add_pepper       0.00      0.00      0.00       172
+            mix_dressing       0.00      0.00      0.00       130
+           peel_cucumber       0.47      0.29      0.36      8230
+            cut_cucumber       0.27      0.16      0.20      6804
+place_cucumber_into_bowl       0.05      0.06      0.06      2726
+            add_dressing       0.00      0.00      0.00       110
+         mix_ingredients       0.13      0.20      0.15      2947
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.19      0.19      0.19     53609
+               macro avg       0.11      0.09      0.09     53609
+            weighted avg       0.24      0.19      0.21     53609
+
+MoC  0.4018
+AccuracyTOT  0.3734
+RecallTOT  0.3287
+PrecisionTOT  0.3519
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.34      0.39      0.36      2047
+  place_tomato_into_bowl       1.00      0.60      0.75       396
+              cut_cheese       0.45      0.43      0.44      1413
+  place_cheese_into_bowl       0.00      0.00      0.00       241
+             cut_lettuce       0.00      0.00      0.00       998
+ place_lettuce_into_bowl       0.00      0.00      0.00         0
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.34      0.62      0.44       942
+           peel_cucumber       1.00      0.32      0.49      3658
+            cut_cucumber       0.27      1.00      0.42       439
+place_cucumber_into_bowl       0.48      0.25      0.33       587
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.37      0.37      0.37     10721
+               macro avg       0.20      0.19      0.17     10721
+            weighted avg       0.57      0.37      0.39     10721
+
+MoC  0.2187
+AccuracyTOT  0.2706
+RecallTOT  0.1850
+PrecisionTOT  0.2434
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.31      0.27      0.29      5186
+  place_tomato_into_bowl       1.00      0.18      0.31      1276
+              cut_cheese       0.32      0.45      0.38      1966
+  place_cheese_into_bowl       0.00      0.00      0.00       241
+             cut_lettuce       0.12      0.22      0.16      2868
+ place_lettuce_into_bowl       0.00      0.00      0.00       265
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.34      0.62      0.44       942
+           peel_cucumber       0.36      0.25      0.30      5280
+            cut_cucumber       0.26      0.29      0.27      2179
+place_cucumber_into_bowl       0.45      0.12      0.19      1175
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00        67
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.27      0.27      0.27     21445
+               macro avg       0.17      0.13      0.12     21445
+            weighted avg       0.34      0.27      0.27     21445
+
+MoC  0.1822
+AccuracyTOT  0.2084
+RecallTOT  0.1542
+PrecisionTOT  0.1998
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.27      0.23      0.25      6929
+  place_tomato_into_bowl       1.00      0.15      0.26      1572
+              cut_cheese       0.20      0.40      0.27      3568
+  place_cheese_into_bowl       0.00      0.00      0.00       241
+             cut_lettuce       0.11      0.14      0.13      4508
+ place_lettuce_into_bowl       0.00      0.00      0.00      1573
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.34      0.62      0.44       942
+           peel_cucumber       0.22      0.19      0.20      7430
+            cut_cucumber       0.18      0.19      0.18      3540
+place_cucumber_into_bowl       0.28      0.08      0.13      1797
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00        67
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.21      0.21      0.21     32167
+               macro avg       0.14      0.11      0.10     32167
+            weighted avg       0.24      0.21      0.20     32167
+
+MoC  0.1842
+AccuracyTOT  0.1821
+RecallTOT  0.1700
+PrecisionTOT  0.2013
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.27      0.29      0.28     10592
+  place_tomato_into_bowl       0.91      0.09      0.17      2590
+              cut_cheese       0.22      0.24      0.23      7880
+  place_cheese_into_bowl       0.00      0.00      0.00      1735
+             cut_lettuce       0.19      0.26      0.22      5337
+ place_lettuce_into_bowl       0.00      0.00      0.00      1621
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.19      0.37      0.25       732
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.34      0.62      0.44       942
+           peel_cucumber       0.14      0.13      0.13     11209
+            cut_cucumber       0.07      0.10      0.09      6566
+place_cucumber_into_bowl       0.16      0.06      0.09      2481
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.13      0.05      0.07      1925
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.18      0.18      0.18     53610
+               macro avg       0.14      0.12      0.10     53610
+            weighted avg       0.21      0.18      0.17     53610
+
+SPLIT 1: CNN  ==> OBS:30% 
+MoC  0.3237
+AccuracyTOT  0.4171
+RecallTOT  0.3237
+PrecisionTOT  0.2184
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.61      0.47      0.53      3139
+  place_tomato_into_bowl       0.00      0.00      0.00       880
+              cut_cheese       0.51      1.00      0.67       553
+  place_cheese_into_bowl       0.00      0.00      0.00         0
+             cut_lettuce       0.12      0.04      0.06      1870
+ place_lettuce_into_bowl       0.00      0.00      0.00       265
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.28      0.59      0.38      1622
+            cut_cucumber       0.45      0.81      0.58      1740
+place_cucumber_into_bowl       0.00      0.00      0.00       588
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00        67
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.42      0.42      0.42     10724
+               macro avg       0.10      0.15      0.12     10724
+            weighted avg       0.34      0.42      0.35     10724
+
+MoC  0.2473
+AccuracyTOT  0.3429
+RecallTOT  0.2473
+PrecisionTOT  0.1893
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.42      0.32      0.36      4882
+  place_tomato_into_bowl       0.00      0.00      0.00      1176
+              cut_cheese       0.48      0.52      0.50      2155
+  place_cheese_into_bowl       0.00      0.00      0.00         0
+             cut_lettuce       0.06      0.06      0.06      3510
+ place_lettuce_into_bowl       0.00      0.00      0.00      1573
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.34      0.53      0.41      3772
+            cut_cucumber       0.41      0.80      0.54      3101
+place_cucumber_into_bowl       0.00      0.00      0.00      1210
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00        67
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.34      0.34      0.34     21446
+               macro avg       0.09      0.12      0.10     21446
+            weighted avg       0.27      0.34      0.29     21446
+
+MoC  0.2082
+AccuracyTOT  0.3292
+RecallTOT  0.1892
+PrecisionTOT  0.1554
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.40      0.41      0.40      6740
+  place_tomato_into_bowl       0.00      0.00      0.00      1718
+              cut_cheese       0.51      0.51      0.51      5438
+  place_cheese_into_bowl       0.00      0.00      0.00      1137
+             cut_lettuce       0.05      0.06      0.05      3510
+ place_lettuce_into_bowl       0.00      0.00      0.00      1621
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.37      0.37      0.37      6273
+            cut_cucumber       0.30      0.59      0.40      4213
+place_cucumber_into_bowl       0.00      0.00      0.00      1210
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.08      0.14      0.11       308
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.33      0.33      0.33     32168
+               macro avg       0.09      0.11      0.10     32168
+            weighted avg       0.29      0.33      0.30     32168
+
+MoC  0.1271
+AccuracyTOT  0.2541
+RecallTOT  0.1130
+PrecisionTOT  0.1071
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.33      0.50      0.40      8675
+  place_tomato_into_bowl       0.00      0.00      0.00      2580
+              cut_cheese       0.38      0.41      0.39      6797
+  place_cheese_into_bowl       0.00      0.00      0.00      1818
+             cut_lettuce       0.03      0.03      0.03      6302
+ place_lettuce_into_bowl       0.00      0.00      0.00      2202
+                add_salt       0.00      0.00      0.00       273
+             add_vinegar       0.47      0.24      0.32      1690
+                 add_oil       0.00      0.00      0.00      2155
+              add_pepper       0.00      0.00      0.00       172
+            mix_dressing       0.00      0.00      0.00       131
+           peel_cucumber       0.34      0.34      0.34      8230
+            cut_cucumber       0.27      0.41      0.33      6804
+place_cucumber_into_bowl       0.00      0.00      0.00      2726
+            add_dressing       0.00      0.00      0.00       111
+         mix_ingredients       0.11      0.10      0.10      2947
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.25      0.25      0.25     53613
+               macro avg       0.10      0.11      0.10     53613
+            weighted avg       0.21      0.25      0.23     53613
+
+SPLIT 2: RNN  ==> OBS:20% 
+MoC  0.4537
+AccuracyTOT  0.4641
+RecallTOT  0.4124
+PrecisionTOT  0.3167
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.07      0.15      0.10       816
+  place_tomato_into_bowl       0.00      0.00      0.00         0
+              cut_cheese       0.76      0.70      0.73      2126
+  place_cheese_into_bowl       0.00      0.00      0.00       236
+             cut_lettuce       0.51      0.43      0.47      2038
+ place_lettuce_into_bowl       0.00      0.00      0.00       948
+                add_salt       0.00      0.00      0.00       279
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.30      1.00      0.46        93
+            mix_dressing       0.83      0.87      0.85      1154
+           peel_cucumber       0.70      0.39      0.50      2585
+            cut_cucumber       0.30      1.00      0.46       347
+place_cucumber_into_bowl       0.00      0.00      0.00         0
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.46      0.46      0.46     10622
+               macro avg       0.18      0.24      0.19     10622
+            weighted avg       0.53      0.46      0.48     10622
+
+MoC  0.3535
+AccuracyTOT  0.3209
+RecallTOT  0.3241
+PrecisionTOT  0.2498
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.31      0.31      0.31      4170
+  place_tomato_into_bowl       0.00      0.00      0.00         0
+              cut_cheese       0.42      0.66      0.51      2243
+  place_cheese_into_bowl       0.00      0.00      0.00       829
+             cut_lettuce       0.33      0.26      0.30      3283
+ place_lettuce_into_bowl       0.00      0.00      0.00      1831
+                add_salt       0.00      0.00      0.00       279
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.30      1.00      0.46        93
+            mix_dressing       0.83      0.87      0.85      1154
+           peel_cucumber       0.36      0.27      0.31      4291
+            cut_cucumber       0.32      0.36      0.34      2143
+place_cucumber_into_bowl       0.12      0.15      0.13       932
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.32      0.32      0.32     21248
+               macro avg       0.16      0.20      0.17     21248
+            weighted avg       0.31      0.32      0.31     21248
+
+MoC  0.2899
+AccuracyTOT  0.2684
+RecallTOT  0.2676
+PrecisionTOT  0.2069
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.44      0.28      0.34      9650
+  place_tomato_into_bowl       0.00      0.00      0.00      1024
+              cut_cheese       0.27      0.46      0.34      3899
+  place_cheese_into_bowl       0.00      0.00      0.00       829
+             cut_lettuce       0.23      0.23      0.23      3840
+ place_lettuce_into_bowl       0.00      0.00      0.00      1831
+                add_salt       0.00      0.00      0.00       279
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.30      1.00      0.46        93
+            mix_dressing       0.83      0.87      0.85      1154
+           peel_cucumber       0.26      0.21      0.23      5631
+            cut_cucumber       0.28      0.29      0.29      2699
+place_cucumber_into_bowl       0.07      0.15      0.10       945
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.27      0.27      0.27     31874
+               macro avg       0.14      0.18      0.15     31874
+            weighted avg       0.30      0.27      0.27     31874
+
+MoC  0.2174
+AccuracyTOT  0.1961
+RecallTOT  0.2174
+PrecisionTOT  0.1299
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.45      0.23      0.30     12290
+  place_tomato_into_bowl       0.09      0.12      0.10      1802
+              cut_cheese       0.24      0.31      0.27      5755
+  place_cheese_into_bowl       0.00      0.00      0.00      1837
+             cut_lettuce       0.19      0.16      0.18      5341
+ place_lettuce_into_bowl       0.00      0.00      0.00      2225
+                add_salt       0.00      0.00      0.00       279
+             add_vinegar       0.08      0.22      0.12       921
+                 add_oil       0.00      0.00      0.00       594
+              add_pepper       0.06      1.00      0.11        93
+            mix_dressing       0.42      0.87      0.56      1154
+           peel_cucumber       0.26      0.19      0.22     10207
+            cut_cucumber       0.18      0.16      0.17      6155
+place_cucumber_into_bowl       0.04      0.09      0.05      1642
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.08      0.12      0.10      2524
+  serve_salad_onto_plate       0.00      0.00      0.00       308
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.20      0.20      0.20     53127
+               macro avg       0.11      0.18      0.11     53127
+            weighted avg       0.24      0.20      0.20     53127
+
+SPLIT 2: RNN  ==> OBS:30% 
+MoC  0.5286
+AccuracyTOT  0.4856
+RecallTOT  0.4698
+PrecisionTOT  0.4040
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.75      0.38      0.50      3355
+  place_tomato_into_bowl       0.00      0.00      0.00         0
+              cut_cheese       0.08      1.00      0.15       117
+  place_cheese_into_bowl       0.15      0.23      0.18       593
+             cut_lettuce       0.61      0.83      0.71      1242
+ place_lettuce_into_bowl       0.00      0.00      0.00       883
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.47      0.47      0.47      1705
+            cut_cucumber       1.00      0.66      0.80      1795
+place_cucumber_into_bowl       0.58      0.65      0.61       932
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.49      0.49      0.49     10622
+               macro avg       0.19      0.22      0.18     10622
+            weighted avg       0.61      0.49      0.52     10622
+
+MoC  0.3052
+AccuracyTOT  0.3235
+RecallTOT  0.2497
+PrecisionTOT  0.2521
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.75      0.30      0.43      8834
+  place_tomato_into_bowl       0.00      0.00      0.00      1024
+              cut_cheese       0.07      0.16      0.10      1773
+  place_cheese_into_bowl       0.05      0.23      0.09       593
+             cut_lettuce       0.40      0.58      0.47      1799
+ place_lettuce_into_bowl       0.00      0.00      0.00       883
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.26      0.26      0.26      3045
+            cut_cucumber       1.00      0.55      0.71      2352
+place_cucumber_into_bowl       0.23      0.66      0.35       945
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.32      0.32      0.32     21248
+               macro avg       0.15      0.14      0.13     21248
+            weighted avg       0.51      0.32      0.36     21248
+
+MoC  0.3040
+AccuracyTOT  0.2773
+RecallTOT  0.2171
+PrecisionTOT  0.1962
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.72      0.29      0.41     10530
+  place_tomato_into_bowl       0.23      0.27      0.25      1519
+              cut_cheese       0.06      0.09      0.07      3629
+  place_cheese_into_bowl       0.04      0.09      0.06      1481
+             cut_lettuce       0.27      0.37      0.31      2807
+ place_lettuce_into_bowl       0.00      0.00      0.00       883
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.24      0.24      0.24      5849
+            cut_cucumber       0.68      0.42      0.52      3422
+place_cucumber_into_bowl       0.23      0.51      0.32      1209
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.25      0.76      0.38       545
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.28      0.28      0.28     31874
+               macro avg       0.14      0.16      0.14     31874
+            weighted avg       0.41      0.28      0.31     31874
+
+MoC  0.1641
+AccuracyTOT  0.1932
+RecallTOT  0.1641
+PrecisionTOT  0.1680
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.72      0.26      0.38     11629
+  place_tomato_into_bowl       0.19      0.22      0.20      1912
+              cut_cheese       0.06      0.09      0.07      3629
+  place_cheese_into_bowl       0.04      0.08      0.05      1730
+             cut_lettuce       0.27      0.31      0.29      3300
+ place_lettuce_into_bowl       0.00      0.00      0.00      1397
+                add_salt       0.09      0.16      0.11       486
+             add_vinegar       0.09      0.10      0.10      2798
+                 add_oil       0.56      0.33      0.41      2289
+              add_pepper       0.07      0.20      0.11       563
+            mix_dressing       0.01      0.46      0.02        85
+           peel_cucumber       0.24      0.19      0.21      7621
+            cut_cucumber       0.42      0.20      0.27      7428
+place_cucumber_into_bowl       0.15      0.24      0.18      2616
+            add_dressing       0.00      0.00      0.00       465
+         mix_ingredients       0.11      0.13      0.12      4392
+  serve_salad_onto_plate       0.00      0.00      0.00       447
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.01      0.00       340
+
+               micro avg       0.19      0.19      0.19     53127
+               macro avg       0.16      0.16      0.13     53127
+            weighted avg       0.33      0.19      0.23     53127
+
+SPLIT 2: CNN  ==> OBS:20% 
+MoC  0.5177
+AccuracyTOT  0.5635
+RecallTOT  0.5177
+PrecisionTOT  0.5452
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.40      0.74      0.52       816
+  place_tomato_into_bowl       0.00      0.00      0.00         0
+              cut_cheese       0.76      0.49      0.60      2126
+  place_cheese_into_bowl       0.00      0.00      0.00       236
+             cut_lettuce       0.79      0.43      0.55      2041
+ place_lettuce_into_bowl       0.00      0.00      0.00       948
+                add_salt       1.00      0.34      0.51       279
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.25      1.00      0.40        93
+            mix_dressing       0.75      0.35      0.48      1154
+           peel_cucumber       0.50      1.00      0.66      2586
+            cut_cucumber       1.00      0.82      0.90       347
+place_cucumber_into_bowl       0.00      0.00      0.00         0
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.56      0.56      0.56     10626
+               macro avg       0.29      0.27      0.24     10626
+            weighted avg       0.60      0.56      0.53     10626
+
+MoC  0.3928
+AccuracyTOT  0.4278
+RecallTOT  0.3928
+PrecisionTOT  0.4247
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.52      0.31      0.39      4173
+  place_tomato_into_bowl       0.00      0.00      0.00         0
+              cut_cheese       0.62      0.47      0.53      2243
+  place_cheese_into_bowl       0.00      0.00      0.00       829
+             cut_lettuce       0.80      0.28      0.41      3283
+ place_lettuce_into_bowl       0.00      0.00      0.00      1831
+                add_salt       1.00      0.34      0.51       279
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.25      1.00      0.40        93
+            mix_dressing       0.75      0.35      0.48      1154
+           peel_cucumber       0.35      0.88      0.50      4293
+            cut_cucumber       0.37      0.69      0.48      2143
+place_cucumber_into_bowl       0.00      0.00      0.00       932
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.43      0.43      0.43     21253
+               macro avg       0.25      0.23      0.20     21253
+            weighted avg       0.45      0.43      0.38     21253
+
+MoC  0.3328
+AccuracyTOT  0.3870
+RecallTOT  0.3328
+PrecisionTOT  0.3634
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.66      0.42      0.51      9651
+  place_tomato_into_bowl       0.00      0.00      0.00      1024
+              cut_cheese       0.41      0.27      0.32      3901
+  place_cheese_into_bowl       0.00      0.00      0.00       829
+             cut_lettuce       0.70      0.24      0.36      3840
+ place_lettuce_into_bowl       0.00      0.00      0.00      1831
+                add_salt       1.00      0.34      0.51       279
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.25      1.00      0.40        93
+            mix_dressing       0.75      0.35      0.48      1154
+           peel_cucumber       0.31      0.69      0.43      5631
+            cut_cucumber       0.28      0.68      0.39      2701
+place_cucumber_into_bowl       0.00      0.00      0.00       945
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.39      0.39      0.39     31879
+               macro avg       0.23      0.21      0.18     31879
+            weighted avg       0.45      0.39      0.37     31879
+
+MoC  0.1933
+AccuracyTOT  0.2396
+RecallTOT  0.1819
+PrecisionTOT  0.1552
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.43      0.36      0.39     12290
+  place_tomato_into_bowl       0.00      0.00      0.00      1802
+              cut_cheese       0.36      0.18      0.24      5755
+  place_cheese_into_bowl       0.00      0.00      0.00      1837
+             cut_lettuce       0.18      0.17      0.18      5341
+ place_lettuce_into_bowl       0.00      0.00      0.00      2225
+                add_salt       0.66      0.34      0.45       279
+             add_vinegar       0.00      0.00      0.00       922
+                 add_oil       0.00      0.00      0.00       595
+              add_pepper       0.20      1.00      0.33        93
+            mix_dressing       0.32      0.35      0.34      1154
+           peel_cucumber       0.28      0.38      0.32     10207
+            cut_cucumber       0.20      0.30      0.24      6156
+place_cucumber_into_bowl       0.00      0.00      0.00      1642
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00      2525
+  serve_salad_onto_plate       0.00      0.00      0.00       308
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.24      0.24      0.24     53131
+               macro avg       0.14      0.16      0.13     53131
+            weighted avg       0.25      0.24      0.23     53131
+
+SPLIT 2: CNN  ==> OBS:30% 
+MoC  0.5367
+AccuracyTOT  0.5724
+RecallTOT  0.3903
+PrecisionTOT  0.3710
+                          precision    recall  f1-score   support
+
+              cut_tomato       1.00      0.60      0.75      3357
+  place_tomato_into_bowl       0.00      0.00      0.00         0
+              cut_cheese       0.27      1.00      0.43       117
+  place_cheese_into_bowl       0.00      0.00      0.00       593
+             cut_lettuce       0.58      0.63      0.60      1242
+ place_lettuce_into_bowl       0.00      0.00      0.00       883
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.42      1.00      0.59      1707
+            cut_cucumber       0.81      0.54      0.65      1796
+place_cucumber_into_bowl       1.00      0.52      0.69       932
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.57      0.57      0.57     10627
+               macro avg       0.21      0.23      0.20     10627
+            weighted avg       0.68      0.57      0.58     10627
+
+MoC  0.2901
+AccuracyTOT  0.3565
+RecallTOT  0.2008
+PrecisionTOT  0.2140
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.72      0.29      0.42      8835
+  place_tomato_into_bowl       0.00      0.00      0.00      1024
+              cut_cheese       0.20      0.07      0.10      1775
+  place_cheese_into_bowl       0.00      0.00      0.00       593
+             cut_lettuce       0.25      0.44      0.32      1799
+ place_lettuce_into_bowl       0.00      0.00      0.00       883
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.36      0.78      0.49      3045
+            cut_cucumber       0.26      0.52      0.35      2354
+place_cucumber_into_bowl       1.00      0.51      0.68       945
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.36      0.36      0.36     21253
+               macro avg       0.15      0.14      0.12     21253
+            weighted avg       0.46      0.36      0.35     21253
+
+MoC  0.2259
+AccuracyTOT  0.3050
+RecallTOT  0.1506
+PrecisionTOT  0.1566
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.47      0.35      0.40     10531
+  place_tomato_into_bowl       0.00      0.00      0.00      1519
+              cut_cheese       0.31      0.15      0.20      3629
+  place_cheese_into_bowl       0.00      0.00      0.00      1481
+             cut_lettuce       0.24      0.28      0.26      2808
+ place_lettuce_into_bowl       0.00      0.00      0.00       883
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.33      0.49      0.40      5850
+            cut_cucumber       0.21      0.36      0.27      3423
+place_cucumber_into_bowl       0.62      0.40      0.49      1209
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.16      0.23      0.19       546
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.30      0.30      0.30     31879
+               macro avg       0.12      0.12      0.12     31879
+            weighted avg       0.32      0.30      0.30     31879
+
+MoC  0.1172
+AccuracyTOT  0.2309
+RecallTOT  0.1172
+PrecisionTOT  0.1697
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.43      0.40      0.42     11629
+  place_tomato_into_bowl       0.00      0.00      0.00      1912
+              cut_cheese       0.20      0.15      0.17      3629
+  place_cheese_into_bowl       0.00      0.00      0.00      1730
+             cut_lettuce       0.21      0.24      0.22      3300
+ place_lettuce_into_bowl       0.00      0.00      0.00      1397
+                add_salt       0.00      0.00      0.00       487
+             add_vinegar       0.64      0.13      0.22      2798
+                 add_oil       0.22      0.15      0.18      2290
+              add_pepper       0.11      0.18      0.14       563
+            mix_dressing       0.00      0.00      0.00        86
+           peel_cucumber       0.32      0.41      0.36      7621
+            cut_cucumber       0.20      0.23      0.21      7428
+place_cucumber_into_bowl       0.62      0.19      0.29      2616
+            add_dressing       0.00      0.00      0.00       466
+         mix_ingredients       0.10      0.03      0.05      4393
+  serve_salad_onto_plate       0.00      0.00      0.00       447
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00       340
+
+               micro avg       0.23      0.23      0.23     53132
+               macro avg       0.16      0.11      0.12     53132
+            weighted avg       0.28      0.23      0.24     53132
+
+SPLIT 3: RNN  ==> OBS:20% 
+MoC  0.4034
+AccuracyTOT  0.3830
+RecallTOT  0.3667
+PrecisionTOT  0.5421
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.60      0.96      0.74      1417
+  place_tomato_into_bowl       0.00      0.00      0.00         0
+              cut_cheese       0.43      0.34      0.38      2028
+  place_cheese_into_bowl       0.74      0.73      0.73       138
+             cut_lettuce       0.00      0.00      0.00      1281
+ place_lettuce_into_bowl       0.00      0.00      0.00         0
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       1.00      0.30      0.46       429
+                 add_oil       1.00      0.41      0.58       238
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.41      0.24      0.30      1276
+           peel_cucumber       0.78      0.59      0.67       859
+            cut_cucumber       0.86      0.41      0.56      1699
+place_cucumber_into_bowl       0.15      0.05      0.07       905
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.38      0.38      0.38     10270
+               macro avg       0.31      0.21      0.24     10270
+            weighted avg       0.51      0.38      0.41     10270
+
+MoC  0.2555
+AccuracyTOT  0.2912
+RecallTOT  0.2555
+PrecisionTOT  0.4549
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.31      0.83      0.45      3385
+  place_tomato_into_bowl       0.00      0.00      0.00       612
+              cut_cheese       0.48      0.21      0.30      3910
+  place_cheese_into_bowl       0.74      0.35      0.47       289
+             cut_lettuce       0.02      0.01      0.02      3880
+ place_lettuce_into_bowl       0.00      0.00      0.00       532
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       1.00      0.30      0.46       429
+                 add_oil       1.00      0.41      0.58       238
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.41      0.23      0.29      1328
+           peel_cucumber       0.86      0.39      0.53      2262
+            cut_cucumber       0.49      0.30      0.37      2477
+place_cucumber_into_bowl       0.15      0.03      0.06      1203
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.29      0.29      0.29     20545
+               macro avg       0.29      0.16      0.19     20545
+            weighted avg       0.38      0.29      0.28     20545
+
+MoC  0.2395
+AccuracyTOT  0.2795
+RecallTOT  0.2211
+PrecisionTOT  0.3899
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.27      0.75      0.39      4686
+  place_tomato_into_bowl       0.07      0.16      0.10       935
+              cut_cheese       0.53      0.34      0.41      6713
+  place_cheese_into_bowl       0.65      0.19      0.29      1751
+             cut_lettuce       0.02      0.01      0.01      4957
+ place_lettuce_into_bowl       0.00      0.00      0.00       777
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       1.00      0.30      0.46       429
+                 add_oil       1.00      0.41      0.58       238
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.41      0.23      0.29      1328
+           peel_cucumber       0.45      0.22      0.30      3901
+            cut_cucumber       0.53      0.23      0.32      3639
+place_cucumber_into_bowl       0.15      0.03      0.05      1463
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.28      0.28      0.28     30817
+               macro avg       0.27      0.15      0.17     30817
+            weighted avg       0.36      0.28      0.27     30817
+
+MoC  0.1992
+AccuracyTOT  0.2179
+RecallTOT  0.1992
+PrecisionTOT  0.1714
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.27      0.39      0.32      9044
+  place_tomato_into_bowl       0.09      0.17      0.12      1838
+              cut_cheese       0.40      0.35      0.38      7159
+  place_cheese_into_bowl       0.19      0.17      0.18      2039
+             cut_lettuce       0.11      0.07      0.09      7962
+ place_lettuce_into_bowl       0.00      0.00      0.00      1857
+                add_salt       0.00      0.00      0.00       669
+             add_vinegar       0.08      0.15      0.11       881
+                 add_oil       0.20      0.58      0.30      1060
+              add_pepper       0.12      0.49      0.19       406
+            mix_dressing       0.41      0.23      0.29      1328
+           peel_cucumber       0.24      0.17      0.20      6917
+            cut_cucumber       0.39      0.20      0.26      7312
+place_cucumber_into_bowl       0.07      0.02      0.03      1874
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00      1021
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.22      0.22      0.22     51367
+               macro avg       0.14      0.16      0.13     51367
+            weighted avg       0.24      0.22      0.22     51367
+
+SPLIT 3: RNN  ==> OBS:30% 
+MoC  0.3956
+AccuracyTOT  0.4790
+RecallTOT  0.3956
+PrecisionTOT  0.4707
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.45      0.86      0.59      1968
+  place_tomato_into_bowl       0.23      0.38      0.28       612
+              cut_cheese       1.00      0.11      0.19      1880
+  place_cheese_into_bowl       0.00      0.00      0.00       151
+             cut_lettuce       0.92      0.51      0.66      2599
+ place_lettuce_into_bowl       0.00      0.00      0.00       532
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       1.00      0.73      0.84        52
+           peel_cucumber       0.54      0.58      0.56      1402
+            cut_cucumber       0.57      0.79      0.66       776
+place_cucumber_into_bowl       0.00      0.00      0.00       298
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.48      0.48      0.48     10270
+               macro avg       0.25      0.21      0.20     10270
+            weighted avg       0.64      0.48      0.46     10270
+
+MoC  0.2909
+AccuracyTOT  0.2756
+RecallTOT  0.2424
+PrecisionTOT  0.2906
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.23      0.58      0.33      3269
+  place_tomato_into_bowl       0.09      0.28      0.13       935
+              cut_cheese       0.21      0.04      0.07      4684
+  place_cheese_into_bowl       0.00      0.00      0.00      1613
+             cut_lettuce       0.93      0.39      0.55      3676
+ place_lettuce_into_bowl       0.00      0.00      0.00       777
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       1.00      0.73      0.84        52
+           peel_cucumber       0.33      0.29      0.31      3042
+            cut_cucumber       0.46      0.44      0.45      1939
+place_cucumber_into_bowl       0.25      0.15      0.19       558
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.28      0.28      0.28     20545
+               macro avg       0.18      0.15      0.15     20545
+            weighted avg       0.35      0.28      0.27     20545
+
+MoC  0.2469
+AccuracyTOT  0.2533
+RecallTOT  0.2279
+PrecisionTOT  0.2497
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.27      0.42      0.33      6039
+  place_tomato_into_bowl       0.06      0.23      0.09      1208
+              cut_cheese       0.08      0.04      0.05      5130
+  place_cheese_into_bowl       0.00      0.00      0.00      1901
+             cut_lettuce       0.63      0.31      0.42      5774
+ place_lettuce_into_bowl       0.00      0.00      0.00      1107
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00       145
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       1.00      0.73      0.84        52
+           peel_cucumber       0.38      0.28      0.32      5006
+            cut_cucumber       0.46      0.37      0.41      3452
+place_cucumber_into_bowl       0.25      0.15      0.19       558
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.14      0.44      0.21       445
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.25      0.25      0.25     30817
+               macro avg       0.17      0.16      0.15     30817
+            weighted avg       0.31      0.25      0.26     30817
+
+MoC  0.1238
+AccuracyTOT  0.1851
+RecallTOT  0.1165
+PrecisionTOT  0.1392
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.27      0.24      0.26     10348
+  place_tomato_into_bowl       0.05      0.11      0.07      2398
+              cut_cheese       0.08      0.04      0.05      5130
+  place_cheese_into_bowl       0.00      0.00      0.00      1915
+             cut_lettuce       0.59      0.31      0.41      7394
+ place_lettuce_into_bowl       0.00      0.00      0.00      1857
+                add_salt       0.22      0.10      0.13      1156
+             add_vinegar       0.00      0.00      0.00      1496
+                 add_oil       0.09      0.09      0.09      1950
+              add_pepper       0.10      0.21      0.14      1116
+            mix_dressing       0.02      0.11      0.03       337
+           peel_cucumber       0.42      0.30      0.35      6189
+            cut_cucumber       0.40      0.22      0.28      6790
+place_cucumber_into_bowl       0.10      0.07      0.09      1157
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.04      0.17      0.06      1127
+  serve_salad_onto_plate       0.00      0.00      0.00      1007
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.19      0.19      0.19     51367
+               macro avg       0.12      0.10      0.10     51367
+            weighted avg       0.27      0.19      0.21     51367
+
+SPLIT 3: CNN  ==> OBS:20% 
+MoC  0.2470
+AccuracyTOT  0.3167
+RecallTOT  0.2246
+PrecisionTOT  0.2331
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.51      0.23      0.32      1417
+  place_tomato_into_bowl       0.00      0.00      0.00         0
+              cut_cheese       0.52      0.30      0.38      2029
+  place_cheese_into_bowl       0.00      0.00      0.00       138
+             cut_lettuce       0.37      0.68      0.48      1281
+ place_lettuce_into_bowl       0.00      0.00      0.00         0
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00       429
+                 add_oil       0.00      0.00      0.00       238
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00      1276
+           peel_cucumber       0.15      0.59      0.23       859
+            cut_cucumber       0.71      0.42      0.53      1700
+place_cucumber_into_bowl       0.30      0.25      0.27       905
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.32      0.32      0.32     10272
+               macro avg       0.13      0.13      0.12     10272
+            weighted avg       0.38      0.32      0.31     10272
+
+MoC  0.1537
+AccuracyTOT  0.2631
+RecallTOT  0.1419
+PrecisionTOT  0.1321
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.23      0.36      0.28      3385
+  place_tomato_into_bowl       0.00      0.00      0.00       613
+              cut_cheese       0.40      0.16      0.22      3911
+  place_cheese_into_bowl       0.00      0.00      0.00       289
+             cut_lettuce       0.44      0.43      0.44      3881
+ place_lettuce_into_bowl       0.00      0.00      0.00       532
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00       429
+                 add_oil       0.00      0.00      0.00       238
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00      1328
+           peel_cucumber       0.17      0.34      0.22      2262
+            cut_cucumber       0.27      0.38      0.31      2477
+place_cucumber_into_bowl       0.20      0.19      0.19      1203
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.26      0.26      0.26     20548
+               macro avg       0.09      0.10      0.09     20548
+            weighted avg       0.26      0.26      0.25     20548
+
+MoC  0.1419
+AccuracyTOT  0.2305
+RecallTOT  0.1309
+PrecisionTOT  0.1130
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.19      0.35      0.25      4686
+  place_tomato_into_bowl       0.00      0.00      0.00       935
+              cut_cheese       0.18      0.12      0.14      6714
+  place_cheese_into_bowl       0.00      0.00      0.00      1751
+             cut_lettuce       0.35      0.33      0.34      4959
+ place_lettuce_into_bowl       0.00      0.00      0.00       777
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00       429
+                 add_oil       0.00      0.00      0.00       238
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00      1328
+           peel_cucumber       0.19      0.27      0.22      3903
+            cut_cucumber       0.36      0.47      0.41      3639
+place_cucumber_into_bowl       0.20      0.15      0.18      1463
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.23      0.23      0.23     30822
+               macro avg       0.08      0.09      0.08     30822
+            weighted avg       0.20      0.23      0.21     30822
+
+MoC  0.0832
+AccuracyTOT  0.1604
+RecallTOT  0.0734
+PrecisionTOT  0.0707
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.18      0.25      0.21      9045
+  place_tomato_into_bowl       0.00      0.00      0.00      1838
+              cut_cheese       0.09      0.11      0.10      7159
+  place_cheese_into_bowl       0.00      0.00      0.00      2039
+             cut_lettuce       0.30      0.21      0.24      7962
+ place_lettuce_into_bowl       0.00      0.00      0.00      1857
+                add_salt       0.00      0.00      0.00       669
+             add_vinegar       0.00      0.00      0.00       882
+                 add_oil       0.00      0.00      0.00      1061
+              add_pepper       0.00      0.00      0.00       406
+            mix_dressing       0.00      0.00      0.00      1328
+           peel_cucumber       0.14      0.17      0.15      6917
+            cut_cucumber       0.28      0.27      0.27      7312
+place_cucumber_into_bowl       0.15      0.12      0.13      1874
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.07      0.11      0.09      1021
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.16      0.16      0.16     51370
+               macro avg       0.06      0.07      0.06     51370
+            weighted avg       0.15      0.16      0.15     51370
+
+SPLIT 3: CNN  ==> OBS:30% 
+MoC  0.3135
+AccuracyTOT  0.3321
+RecallTOT  0.3135
+PrecisionTOT  0.2287
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.41      0.52      0.46      1968
+  place_tomato_into_bowl       0.00      0.00      0.00       613
+              cut_cheese       0.20      0.15      0.17      1882
+  place_cheese_into_bowl       0.00      0.00      0.00       151
+             cut_lettuce       0.23      0.20      0.21      2600
+ place_lettuce_into_bowl       0.00      0.00      0.00       532
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.18      1.00      0.30        52
+           peel_cucumber       0.39      0.88      0.54      1403
+            cut_cucumber       0.88      0.38      0.54       777
+place_cucumber_into_bowl       0.00      0.00      0.00       298
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.33      0.33      0.33     10276
+               macro avg       0.12      0.17      0.12     10276
+            weighted avg       0.29      0.33      0.29     10276
+
+MoC  0.3490
+AccuracyTOT  0.3631
+RecallTOT  0.3490
+PrecisionTOT  0.2099
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.36      0.51      0.42      3269
+  place_tomato_into_bowl       0.00      0.00      0.00       935
+              cut_cheese       0.30      0.28      0.29      4685
+  place_cheese_into_bowl       0.00      0.00      0.00      1613
+             cut_lettuce       0.20      0.14      0.17      3678
+ place_lettuce_into_bowl       0.00      0.00      0.00       777
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.18      1.00      0.30        52
+           peel_cucumber       0.45      0.81      0.58      3044
+            cut_cucumber       0.61      0.75      0.67      1939
+place_cucumber_into_bowl       0.00      0.00      0.00       558
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.36      0.36      0.36     20550
+               macro avg       0.11      0.18      0.13     20550
+            weighted avg       0.29      0.36      0.31     20550
+
+MoC  0.2253
+AccuracyTOT  0.2572
+RecallTOT  0.2253
+PrecisionTOT  0.1412
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.32      0.29      0.31      6039
+  place_tomato_into_bowl       0.00      0.00      0.00      1209
+              cut_cheese       0.24      0.30      0.27      5130
+  place_cheese_into_bowl       0.00      0.00      0.00      1901
+             cut_lettuce       0.16      0.09      0.12      5776
+ place_lettuce_into_bowl       0.00      0.00      0.00      1107
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00       146
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.18      1.00      0.30        52
+           peel_cucumber       0.33      0.49      0.40      5006
+            cut_cucumber       0.40      0.44      0.42      3455
+place_cucumber_into_bowl       0.00      0.00      0.00       558
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.07      0.08      0.08       445
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.26      0.26      0.26     30824
+               macro avg       0.09      0.14      0.10     30824
+            weighted avg       0.23      0.26      0.24     30824
+
+MoC  0.0949
+AccuracyTOT  0.1826
+RecallTOT  0.0844
+PrecisionTOT  0.0825
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.37      0.27      0.31     10348
+  place_tomato_into_bowl       0.00      0.00      0.00      2398
+              cut_cheese       0.24      0.30      0.26      5130
+  place_cheese_into_bowl       0.00      0.00      0.00      1916
+             cut_lettuce       0.13      0.07      0.09      7394
+ place_lettuce_into_bowl       0.00      0.00      0.00      1857
+                add_salt       0.00      0.00      0.00      1156
+             add_vinegar       0.00      0.00      0.00      1497
+                 add_oil       0.00      0.00      0.00      1950
+              add_pepper       0.00      0.00      0.00      1116
+            mix_dressing       0.14      0.15      0.15       338
+           peel_cucumber       0.27      0.40      0.32      6189
+            cut_cucumber       0.31      0.29      0.30      6790
+place_cucumber_into_bowl       0.00      0.00      0.00      1157
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.02      0.03      0.02      1128
+  serve_salad_onto_plate       0.00      0.00      0.00      1008
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.18      0.18      0.18     51372
+               macro avg       0.08      0.08      0.08     51372
+            weighted avg       0.19      0.18      0.18     51372
+
+SPLIT 4: RNN  ==> OBS:20% 
+MoC  0.5228
+AccuracyTOT  0.5248
+RecallTOT  0.5228
+PrecisionTOT  0.4786
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.41      0.60      0.49      1330
+  place_tomato_into_bowl       0.00      0.00      0.00       218
+              cut_cheese       0.54      0.70      0.61      1194
+  place_cheese_into_bowl       0.47      0.66      0.55       487
+             cut_lettuce       0.42      0.46      0.44      1793
+ place_lettuce_into_bowl       0.51      0.82      0.63       411
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       1.00      0.26      0.41       364
+                 add_oil       0.31      1.00      0.47        93
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.35      0.24      0.29       902
+           peel_cucumber       1.00      0.47      0.64      2797
+            cut_cucumber       0.70      1.00      0.82       631
+place_cucumber_into_bowl       0.04      0.07      0.05       211
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.52      0.52      0.52     10431
+               macro avg       0.30      0.33      0.28     10431
+            weighted avg       0.61      0.52      0.52     10431
+
+MoC  0.4497
+AccuracyTOT  0.4770
+RecallTOT  0.4497
+PrecisionTOT  0.4520
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.39      0.76      0.52      3361
+  place_tomato_into_bowl       0.00      0.00      0.00       344
+              cut_cheese       0.46      0.51      0.48      1635
+  place_cheese_into_bowl       0.47      0.66      0.55       487
+             cut_lettuce       0.36      0.37      0.37      3206
+ place_lettuce_into_bowl       0.14      0.51      0.21       657
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       1.00      0.26      0.41       364
+                 add_oil       0.31      1.00      0.47        93
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.35      0.24      0.29       902
+           peel_cucumber       1.00      0.22      0.37      5823
+            cut_cucumber       0.92      0.79      0.85      3784
+place_cucumber_into_bowl       0.04      0.07      0.05       211
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.48      0.48      0.48     20867
+               macro avg       0.29      0.28      0.24     20867
+            weighted avg       0.65      0.48      0.47     20867
+
+MoC  0.3882
+AccuracyTOT  0.3774
+RecallTOT  0.3882
+PrecisionTOT  0.4067
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.29      0.70      0.41      3847
+  place_tomato_into_bowl       0.50      0.21      0.30       732
+              cut_cheese       0.43      0.38      0.40      3871
+  place_cheese_into_bowl       0.22      0.52      0.31       678
+             cut_lettuce       0.35      0.30      0.32      4451
+ place_lettuce_into_bowl       0.09      0.33      0.14      1015
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       1.00      0.26      0.41       364
+                 add_oil       0.31      1.00      0.47        93
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.35      0.24      0.29       902
+           peel_cucumber       0.42      0.21      0.28      6719
+            cut_cucumber       0.89      0.49      0.63      7357
+place_cucumber_into_bowl       0.04      0.01      0.02      1272
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.38      0.38      0.38     31301
+               macro avg       0.26      0.25      0.21     31301
+            weighted avg       0.48      0.38      0.39     31301
+
+MoC  0.1731
+AccuracyTOT  0.2627
+RecallTOT  0.1731
+PrecisionTOT  0.2299
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.25      0.38      0.30      7833
+  place_tomato_into_bowl       0.08      0.09      0.09      1659
+              cut_cheese       0.29      0.32      0.31      7260
+  place_cheese_into_bowl       0.16      0.27      0.20      1316
+             cut_lettuce       0.35      0.16      0.22      8416
+ place_lettuce_into_bowl       0.08      0.20      0.12      1667
+                add_salt       0.00      0.00      0.00       100
+             add_vinegar       1.00      0.15      0.26       613
+                 add_oil       0.10      0.22      0.14       427
+              add_pepper       0.00      0.00      0.00       238
+            mix_dressing       0.35      0.19      0.24      1178
+           peel_cucumber       0.31      0.21      0.25     10529
+            cut_cucumber       0.46      0.40      0.43      8971
+place_cucumber_into_bowl       0.01      0.01      0.01      1697
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00       270
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.26      0.26      0.26     52174
+               macro avg       0.18      0.14      0.13     52174
+            weighted avg       0.31      0.26      0.27     52174
+
+SPLIT 4: RNN  ==> OBS:30% 
+MoC  0.5150
+AccuracyTOT  0.7326
+RecallTOT  0.5150
+PrecisionTOT  0.4861
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.72      0.72      0.72      2029
+  place_tomato_into_bowl       0.00      0.00      0.00       126
+              cut_cheese       0.00      0.00      0.00       441
+  place_cheese_into_bowl       0.00      0.00      0.00         0
+             cut_lettuce       0.91      0.85      0.88      1412
+ place_lettuce_into_bowl       0.08      0.46      0.14       246
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.80      0.69      0.74      3024
+            cut_cucumber       0.89      0.88      0.89      3153
+place_cucumber_into_bowl       0.00      0.00      0.00         0
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.73      0.73      0.73     10431
+               macro avg       0.18      0.19      0.18     10431
+            weighted avg       0.77      0.73      0.75     10431
+
+MoC  0.3673
+AccuracyTOT  0.4997
+RecallTOT  0.3673
+PrecisionTOT  0.3697
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.33      0.59      0.43      2515
+  place_tomato_into_bowl       0.18      0.07      0.10       514
+              cut_cheese       0.56      0.19      0.28      2677
+  place_cheese_into_bowl       0.00      0.00      0.00       191
+             cut_lettuce       0.68      0.51      0.58      2658
+ place_lettuce_into_bowl       0.21      0.71      0.32       604
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.48      0.54      0.51      3921
+            cut_cucumber       0.83      0.67      0.74      6726
+place_cucumber_into_bowl       0.06      0.03      0.04      1061
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.50      0.50      0.50     20867
+               macro avg       0.18      0.17      0.16     20867
+            weighted avg       0.57      0.50      0.51     20867
+
+MoC  0.2777
+AccuracyTOT  0.3895
+RecallTOT  0.2579
+PrecisionTOT  0.2471
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.23      0.42      0.30      4696
+  place_tomato_into_bowl       0.03      0.07      0.05       514
+              cut_cheese       0.29      0.11      0.16      4500
+  place_cheese_into_bowl       0.05      0.09      0.07       829
+             cut_lettuce       0.68      0.29      0.40      4711
+ place_lettuce_into_bowl       0.21      0.47      0.29       912
+                add_salt       0.00      0.00      0.00       100
+             add_vinegar       0.00      0.00      0.00        30
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00       238
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.52      0.47      0.50      6373
+            cut_cucumber       0.66      0.66      0.66      6832
+place_cucumber_into_bowl       0.03      0.03      0.03      1296
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.75      1.00      0.86       270
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.39      0.39      0.39     31301
+               macro avg       0.18      0.19      0.17     31301
+            weighted avg       0.45      0.39      0.39     31301
+
+MoC  0.2134
+AccuracyTOT  0.2971
+RecallTOT  0.2008
+PrecisionTOT  0.1803
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.26      0.42      0.32      7313
+  place_tomato_into_bowl       0.02      0.02      0.02      2461
+              cut_cheese       0.30      0.18      0.23      6476
+  place_cheese_into_bowl       0.05      0.05      0.05      1384
+             cut_lettuce       0.55      0.20      0.29      6809
+ place_lettuce_into_bowl       0.21      0.21      0.21      2021
+                add_salt       0.00      0.00      0.00       311
+             add_vinegar       0.00      0.00      0.00       249
+                 add_oil       0.00      0.00      0.00       684
+              add_pepper       0.00      0.00      0.00       371
+            mix_dressing       0.33      1.00      0.50       345
+           peel_cucumber       0.47      0.40      0.43      7731
+            cut_cucumber       0.54      0.53      0.54      9337
+place_cucumber_into_bowl       0.04      0.08      0.06      2429
+            add_dressing       0.07      0.06      0.06      1488
+         mix_ingredients       0.22      0.27      0.24      2765
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.30      0.30      0.30     52174
+               macro avg       0.16      0.18      0.15     52174
+            weighted avg       0.34      0.30      0.30     52174
+
+SPLIT 4: CNN  ==> OBS:20% 
+MoC  0.4138
+AccuracyTOT  0.4459
+RecallTOT  0.3820
+PrecisionTOT  0.2843
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.76      0.60      0.67      1332
+  place_tomato_into_bowl       0.00      0.00      0.00       218
+              cut_cheese       0.37      0.67      0.47      1194
+  place_cheese_into_bowl       0.00      0.00      0.00       487
+             cut_lettuce       0.50      0.45      0.47      1793
+ place_lettuce_into_bowl       0.73      0.64      0.68       411
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00       364
+                 add_oil       0.14      1.00      0.24        93
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00       902
+           peel_cucumber       0.82      0.44      0.57      2798
+            cut_cucumber       0.30      1.00      0.46       631
+place_cucumber_into_bowl       0.10      0.17      0.13       211
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.45      0.45      0.45     10434
+               macro avg       0.19      0.26      0.19     10434
+            weighted avg       0.49      0.45      0.43     10434
+
+MoC  0.3086
+AccuracyTOT  0.3621
+RecallTOT  0.2849
+PrecisionTOT  0.2104
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.41      0.68      0.51      3362
+  place_tomato_into_bowl       0.00      0.00      0.00       344
+              cut_cheese       0.20      0.52      0.29      1636
+  place_cheese_into_bowl       0.00      0.00      0.00       487
+             cut_lettuce       0.34      0.40      0.37      3206
+ place_lettuce_into_bowl       0.54      0.40      0.46       657
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00       364
+                 add_oil       0.14      1.00      0.24        93
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00       902
+           peel_cucumber       0.68      0.35      0.46      5823
+            cut_cucumber       0.32      0.19      0.24      3785
+place_cucumber_into_bowl       0.10      0.17      0.13       211
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.36      0.36      0.36     20870
+               macro avg       0.14      0.19      0.14     20870
+            weighted avg       0.40      0.36      0.35     20870
+
+MoC  0.2777
+AccuracyTOT  0.3261
+RecallTOT  0.2563
+PrecisionTOT  0.2095
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.36      0.61      0.45      3847
+  place_tomato_into_bowl       0.16      0.04      0.06       732
+              cut_cheese       0.24      0.50      0.32      3874
+  place_cheese_into_bowl       0.00      0.00      0.00       678
+             cut_lettuce       0.24      0.29      0.26      4453
+ place_lettuce_into_bowl       0.54      0.26      0.35      1015
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00       364
+                 add_oil       0.14      1.00      0.24        93
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00       902
+           peel_cucumber       0.45      0.40      0.43      6720
+            cut_cucumber       0.49      0.21      0.29      7357
+place_cucumber_into_bowl       0.10      0.03      0.04      1272
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.33      0.33      0.33     31307
+               macro avg       0.14      0.18      0.13     31307
+            weighted avg       0.35      0.33      0.31     31307
+
+MoC  0.1491
+AccuracyTOT  0.2791
+RecallTOT  0.1315
+PrecisionTOT  0.1377
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.41      0.51      0.45      7833
+  place_tomato_into_bowl       0.16      0.02      0.03      1659
+              cut_cheese       0.23      0.30      0.26      7261
+  place_cheese_into_bowl       0.00      0.00      0.00      1316
+             cut_lettuce       0.23      0.15      0.18      8416
+ place_lettuce_into_bowl       0.40      0.16      0.23      1667
+                add_salt       0.00      0.00      0.00       100
+             add_vinegar       0.11      0.12      0.12       613
+                 add_oil       0.07      0.29      0.11       427
+              add_pepper       0.00      0.00      0.00       238
+            mix_dressing       0.00      0.00      0.00      1178
+           peel_cucumber       0.34      0.40      0.37     10529
+            cut_cucumber       0.29      0.26      0.27      8971
+place_cucumber_into_bowl       0.10      0.03      0.05      1697
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00       270
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.28      0.28      0.28     52175
+               macro avg       0.12      0.12      0.11     52175
+            weighted avg       0.27      0.28      0.27     52175
+
+SPLIT 4: CNN  ==> OBS:30% 
+MoC  0.4105
+AccuracyTOT  0.6425
+RecallTOT  0.4105
+PrecisionTOT  0.3990
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.53      1.00      0.69      2030
+  place_tomato_into_bowl       0.00      0.00      0.00       126
+              cut_cheese       0.00      0.00      0.00       442
+  place_cheese_into_bowl       0.00      0.00      0.00         0
+             cut_lettuce       0.78      0.65      0.71      1413
+ place_lettuce_into_bowl       0.00      0.00      0.00       246
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.68      0.77      0.72      3025
+            cut_cucumber       0.80      0.45      0.58      3154
+place_cucumber_into_bowl       0.00      0.00      0.00         0
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.64      0.64      0.64     10436
+               macro avg       0.15      0.15      0.14     10436
+            weighted avg       0.65      0.64      0.61     10436
+
+MoC  0.2951
+AccuracyTOT  0.4638
+RecallTOT  0.2951
+PrecisionTOT  0.2749
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.36      0.91      0.51      2515
+  place_tomato_into_bowl       0.00      0.00      0.00       514
+              cut_cheese       0.47      0.24      0.32      2680
+  place_cheese_into_bowl       0.00      0.00      0.00       191
+             cut_lettuce       0.39      0.35      0.37      2660
+ place_lettuce_into_bowl       0.00      0.00      0.00       604
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.39      0.71      0.50      3922
+            cut_cucumber       0.86      0.45      0.59      6726
+place_cucumber_into_bowl       0.00      0.00      0.00      1061
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.46      0.46      0.46     20873
+               macro avg       0.13      0.14      0.12     20873
+            weighted avg       0.50      0.46      0.44     20873
+
+MoC  0.2730
+AccuracyTOT  0.3942
+RecallTOT  0.2730
+PrecisionTOT  0.1758
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.35      0.57      0.43      4698
+  place_tomato_into_bowl       0.00      0.00      0.00       514
+              cut_cheese       0.50      0.38      0.43      4501
+  place_cheese_into_bowl       0.00      0.00      0.00       829
+             cut_lettuce       0.27      0.20      0.23      4712
+ place_lettuce_into_bowl       0.00      0.00      0.00       912
+                add_salt       0.00      0.00      0.00       100
+             add_vinegar       0.15      1.00      0.26        30
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00       238
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.44      0.61      0.51      6374
+            cut_cucumber       0.51      0.45      0.48      6832
+place_cucumber_into_bowl       0.00      0.00      0.00      1296
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.07      0.35      0.11       270
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.39      0.39      0.39     31306
+               macro avg       0.12      0.19      0.13     31306
+            weighted avg       0.37      0.39      0.37     31306
+
+MoC  0.2011
+AccuracyTOT  0.3027
+RecallTOT  0.1787
+PrecisionTOT  0.1189
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.38      0.59      0.47      7313
+  place_tomato_into_bowl       0.00      0.00      0.00      2461
+              cut_cheese       0.50      0.27      0.35      6476
+  place_cheese_into_bowl       0.00      0.00      0.00      1384
+             cut_lettuce       0.15      0.14      0.14      6809
+ place_lettuce_into_bowl       0.00      0.00      0.00      2021
+                add_salt       0.00      0.00      0.00       311
+             add_vinegar       0.12      1.00      0.22       249
+                 add_oil       0.07      0.17      0.10       684
+              add_pepper       0.00      0.00      0.00       371
+            mix_dressing       0.00      0.00      0.00       345
+           peel_cucumber       0.41      0.55      0.47      7731
+            cut_cucumber       0.40      0.43      0.41      9337
+place_cucumber_into_bowl       0.00      0.00      0.00      2429
+            add_dressing       0.00      0.00      0.00      1489
+         mix_ingredients       0.11      0.07      0.09      2766
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.30      0.30      0.30     52176
+               macro avg       0.11      0.17      0.12     52176
+            weighted avg       0.27      0.30      0.28     52176
+
+SPLIT 5: RNN  ==> OBS:20% 
+MoC  0.4069
+AccuracyTOT  0.3904
+RecallTOT  0.4069
+PrecisionTOT  0.3361
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.67      0.32      0.43      1991
+  place_tomato_into_bowl       0.00      0.00      0.00       156
+              cut_cheese       0.22      0.21      0.22      1059
+  place_cheese_into_bowl       0.17      0.45      0.25       145
+             cut_lettuce       0.56      0.23      0.33      3112
+ place_lettuce_into_bowl       0.00      0.00      0.00       543
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.66      1.00      0.80       606
+            cut_cucumber       0.52      0.87      0.65      1165
+place_cucumber_into_bowl       0.21      0.58      0.31       860
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.39      0.39      0.39      9637
+               macro avg       0.16      0.19      0.16      9637
+            weighted avg       0.47      0.39      0.38      9637
+
+MoC  0.2943
+AccuracyTOT  0.3617
+RecallTOT  0.2943
+PrecisionTOT  0.2333
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.56      0.54      0.55      5219
+  place_tomato_into_bowl       0.00      0.00      0.00       841
+              cut_cheese       0.21      0.10      0.14      2217
+  place_cheese_into_bowl       0.07      0.14      0.10       451
+             cut_lettuce       0.31      0.17      0.22      4705
+ place_lettuce_into_bowl       0.00      0.00      0.00      1230
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.42      0.59      0.49      1800
+            cut_cucumber       0.55      0.85      0.67      1567
+place_cucumber_into_bowl       0.21      0.54      0.30      1206
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00        42
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.36      0.36      0.36     19278
+               macro avg       0.12      0.15      0.13     19278
+            weighted avg       0.35      0.36      0.34     19278
+
+MoC  0.2026
+AccuracyTOT  0.3176
+RecallTOT  0.2026
+PrecisionTOT  0.1814
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.46      0.56      0.50      6165
+  place_tomato_into_bowl       0.00      0.00      0.00      1030
+              cut_cheese       0.37      0.20      0.26      5327
+  place_cheese_into_bowl       0.09      0.08      0.08      1029
+             cut_lettuce       0.31      0.15      0.20      5213
+ place_lettuce_into_bowl       0.05      0.04      0.05      1607
+                add_salt       0.00      0.00      0.00       202
+             add_vinegar       0.00      0.00      0.00       233
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00       227
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.34      0.34      0.34      3138
+            cut_cucumber       0.55      0.69      0.61      2800
+place_cucumber_into_bowl       0.19      0.57      0.29      1290
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00       659
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.32      0.32      0.32     28920
+               macro avg       0.12      0.14      0.12     28920
+            weighted avg       0.33      0.32      0.31     28920
+
+MoC  0.1827
+AccuracyTOT  0.2684
+RecallTOT  0.1827
+PrecisionTOT  0.1920
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.41      0.55      0.47      6589
+  place_tomato_into_bowl       0.04      0.11      0.06      1415
+              cut_cheese       0.21      0.23      0.22      6179
+  place_cheese_into_bowl       0.05      0.10      0.06      1568
+             cut_lettuce       0.31      0.15      0.20      5213
+ place_lettuce_into_bowl       0.04      0.04      0.04      1607
+                add_salt       0.12      0.18      0.15      1055
+             add_vinegar       0.54      0.03      0.06      3647
+                 add_oil       0.40      0.37      0.38      3839
+              add_pepper       0.00      0.00      0.00      1633
+            mix_dressing       0.00      0.00      0.00       470
+           peel_cucumber       0.34      0.33      0.33      3292
+            cut_cucumber       0.53      0.64      0.58      3557
+place_cucumber_into_bowl       0.18      0.32      0.23      2495
+            add_dressing       0.00      0.00      0.00       892
+         mix_ingredients       0.27      0.24      0.25      3608
+  serve_salad_onto_plate       0.00      0.00      0.00       609
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00       536
+
+               micro avg       0.27      0.27      0.27     48204
+               macro avg       0.18      0.17      0.16     48204
+            weighted avg       0.29      0.27      0.25     48204
+
+SPLIT 5: RNN  ==> OBS:30% 
+MoC  0.3568
+AccuracyTOT  0.4556
+RecallTOT  0.3568
+PrecisionTOT  0.3540
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.54      0.76      0.63      3229
+  place_tomato_into_bowl       0.00      0.00      0.00       685
+              cut_cheese       0.58      0.27      0.37      1156
+  place_cheese_into_bowl       0.00      0.00      0.00       306
+             cut_lettuce       0.89      0.44      0.59      1591
+ place_lettuce_into_bowl       0.18      0.47      0.26       685
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.00      0.00      0.00      1195
+            cut_cucumber       1.00      0.77      0.87       402
+place_cucumber_into_bowl       0.36      0.86      0.51       346
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00        42
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.46      0.46      0.46      9637
+               macro avg       0.19      0.19      0.17      9637
+            weighted avg       0.46      0.46      0.43      9637
+
+MoC  0.1885
+AccuracyTOT  0.2873
+RecallTOT  0.1885
+PrecisionTOT  0.2403
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.40      0.72      0.51      4174
+  place_tomato_into_bowl       0.00      0.00      0.00       874
+              cut_cheese       0.39      0.22      0.28      4267
+  place_cheese_into_bowl       0.00      0.00      0.00       884
+             cut_lettuce       0.89      0.33      0.48      2099
+ place_lettuce_into_bowl       0.09      0.30      0.14      1062
+                add_salt       0.00      0.00      0.00       202
+             add_vinegar       0.00      0.00      0.00       233
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00       227
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.00      0.00      0.00      2532
+            cut_cucumber       1.00      0.19      0.32      1635
+place_cucumber_into_bowl       0.36      0.70      0.47       430
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00       659
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.29      0.29      0.29     19278
+               macro avg       0.16      0.13      0.12     19278
+            weighted avg       0.37      0.29      0.27     19278
+
+MoC  0.1657
+AccuracyTOT  0.2552
+RecallTOT  0.1657
+PrecisionTOT  0.2408
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.41      0.69      0.51      4598
+  place_tomato_into_bowl       0.03      0.13      0.05      1259
+              cut_cheese       0.28      0.32      0.30      5119
+  place_cheese_into_bowl       0.08      0.13      0.10      1227
+             cut_lettuce       0.89      0.33      0.48      2099
+ place_lettuce_into_bowl       0.08      0.30      0.13      1062
+                add_salt       0.00      0.00      0.00       628
+             add_vinegar       0.00      0.00      0.00      1918
+                 add_oil       0.08      0.07      0.08       844
+              add_pepper       0.00      0.00      0.00       355
+            mix_dressing       0.00      0.00      0.00       278
+           peel_cucumber       0.00      0.00      0.00      2686
+            cut_cucumber       1.00      0.13      0.23      2392
+place_cucumber_into_bowl       0.36      0.18      0.24      1635
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.39      0.20      0.27      2820
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.26      0.26      0.26     28920
+               macro avg       0.19      0.13      0.13     28920
+            weighted avg       0.33      0.26      0.24     28920
+
+MoC  0.1778
+AccuracyTOT  0.2021
+RecallTOT  0.1778
+PrecisionTOT  0.1698
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.41      0.69      0.51      4598
+  place_tomato_into_bowl       0.03      0.13      0.05      1259
+              cut_cheese       0.28      0.32      0.30      5119
+  place_cheese_into_bowl       0.11      0.25      0.16      1423
+             cut_lettuce       0.89      0.33      0.48      2099
+ place_lettuce_into_bowl       0.08      0.30      0.12      1062
+                add_salt       0.08      0.10      0.09      1613
+             add_vinegar       0.00      0.00      0.00      4109
+                 add_oil       0.14      0.14      0.14      4773
+              add_pepper       0.00      0.00      0.00      2394
+            mix_dressing       0.10      0.21      0.13      1815
+           peel_cucumber       0.00      0.00      0.00      2686
+            cut_cucumber       0.22      0.13      0.16      2392
+place_cucumber_into_bowl       0.27      0.18      0.22      1635
+            add_dressing       0.00      0.00      0.00      1746
+         mix_ingredients       0.15      0.15      0.15      3746
+  serve_salad_onto_plate       0.29      0.26      0.27      3815
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00      1920
+
+               micro avg       0.20      0.20      0.20     48204
+               macro avg       0.16      0.17      0.15     48204
+            weighted avg       0.19      0.20      0.18     48204
+
+SPLIT 5: CNN  ==> OBS:20% 
+MoC  0.3233
+AccuracyTOT  0.3557
+RecallTOT  0.3233
+PrecisionTOT  0.2440
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.35      0.47      0.40      1991
+  place_tomato_into_bowl       0.00      0.00      0.00       156
+              cut_cheese       0.16      0.21      0.18      1060
+  place_cheese_into_bowl       0.00      0.00      0.00       145
+             cut_lettuce       0.41      0.12      0.19      3114
+ place_lettuce_into_bowl       0.00      0.00      0.00       545
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.36      0.73      0.48       606
+            cut_cucumber       0.61      0.89      0.72      1165
+place_cucumber_into_bowl       0.31      0.49      0.38       860
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00         0
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.36      0.36      0.36      9642
+               macro avg       0.12      0.15      0.12      9642
+            weighted avg       0.35      0.36      0.31      9642
+
+MoC  0.3231
+AccuracyTOT  0.3410
+RecallTOT  0.3231
+PrecisionTOT  0.3301
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.37      0.40      0.38      5221
+  place_tomato_into_bowl       0.00      0.00      0.00       841
+              cut_cheese       0.08      0.16      0.10      2218
+  place_cheese_into_bowl       0.00      0.00      0.00       451
+             cut_lettuce       0.49      0.25      0.33      4706
+ place_lettuce_into_bowl       0.00      0.00      0.00      1230
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.46      0.57      0.51      1801
+            cut_cucumber       0.65      0.92      0.76      1567
+place_cucumber_into_bowl       0.26      0.38      0.31      1206
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       1.00      0.55      0.71        42
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.34      0.34      0.34     19283
+               macro avg       0.17      0.17      0.16     19283
+            weighted avg       0.34      0.34      0.33     19283
+
+MoC  0.2475
+AccuracyTOT  0.3361
+RecallTOT  0.2298
+PrecisionTOT  0.1969
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.36      0.41      0.38      6167
+  place_tomato_into_bowl       0.00      0.00      0.00      1030
+              cut_cheese       0.25      0.40      0.31      5328
+  place_cheese_into_bowl       0.00      0.00      0.00      1030
+             cut_lettuce       0.41      0.23      0.29      5213
+ place_lettuce_into_bowl       0.00      0.00      0.00      1607
+                add_salt       0.00      0.00      0.00       202
+             add_vinegar       0.00      0.00      0.00       233
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00       227
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.37      0.45      0.40      3139
+            cut_cucumber       0.54      0.52      0.53      2801
+place_cucumber_into_bowl       0.26      0.36      0.30      1290
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.56      0.86      0.68       659
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.34      0.34      0.34     28926
+               macro avg       0.15      0.17      0.15     28926
+            weighted avg       0.31      0.34      0.32     28926
+
+MoC  0.2842
+AccuracyTOT  0.2848
+RecallTOT  0.2842
+PrecisionTOT  0.2322
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.33      0.40      0.37      6589
+  place_tomato_into_bowl       0.00      0.00      0.00      1415
+              cut_cheese       0.24      0.37      0.29      6179
+  place_cheese_into_bowl       0.00      0.00      0.00      1568
+             cut_lettuce       0.26      0.23      0.24      5213
+ place_lettuce_into_bowl       0.00      0.00      0.00      1607
+                add_salt       0.00      0.00      0.00      1055
+             add_vinegar       0.22      0.03      0.06      3647
+                 add_oil       0.39      0.41      0.40      3840
+              add_pepper       0.00      0.00      0.00      1633
+            mix_dressing       0.35      0.57      0.43       470
+           peel_cucumber       0.20      0.43      0.27      3292
+            cut_cucumber       0.38      0.43      0.41      3557
+place_cucumber_into_bowl       0.24      0.18      0.21      2495
+            add_dressing       0.00      0.00      0.00       893
+         mix_ingredients       0.35      0.35      0.35      3608
+  serve_salad_onto_plate       0.90      0.71      0.80       610
+            action_start       0.00      0.00      0.00         0
+              action_end       0.30      1.00      0.47       536
+
+               micro avg       0.28      0.28      0.28     48207
+               macro avg       0.22      0.27      0.23     48207
+            weighted avg       0.25      0.28      0.26     48207
+
+SPLIT 5: CNN  ==> OBS:30% 
+MoC  0.3642
+AccuracyTOT  0.5177
+RecallTOT  0.3311
+PrecisionTOT  0.2920
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.59      0.69      0.63      3230
+  place_tomato_into_bowl       0.64      0.41      0.50       685
+              cut_cheese       0.33      0.32      0.32      1158
+  place_cheese_into_bowl       0.00      0.00      0.00       306
+             cut_lettuce       0.69      0.77      0.73      1592
+ place_lettuce_into_bowl       0.15      0.09      0.12       685
+                add_salt       0.00      0.00      0.00         0
+             add_vinegar       0.00      0.00      0.00         0
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00         0
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.37      0.36      0.36      1195
+            cut_cucumber       0.44      1.00      0.61       402
+place_cucumber_into_bowl       0.00      0.00      0.00       346
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00        42
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.52      0.52      0.52      9641
+               macro avg       0.17      0.19      0.17      9641
+            weighted avg       0.47      0.52      0.49      9641
+
+MoC  0.2245
+AccuracyTOT  0.4215
+RecallTOT  0.1946
+PrecisionTOT  0.1991
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.52      0.65      0.58      4176
+  place_tomato_into_bowl       0.49      0.36      0.42       874
+              cut_cheese       0.37      0.54      0.44      4268
+  place_cheese_into_bowl       0.00      0.00      0.00       885
+             cut_lettuce       0.60      0.58      0.59      2099
+ place_lettuce_into_bowl       0.15      0.06      0.09      1062
+                add_salt       0.00      0.00      0.00       202
+             add_vinegar       0.00      0.00      0.00       233
+                 add_oil       0.00      0.00      0.00         0
+              add_pepper       0.00      0.00      0.00       227
+            mix_dressing       0.00      0.00      0.00         0
+           peel_cucumber       0.46      0.35      0.40      2533
+            cut_cucumber       0.39      0.37      0.38      1636
+place_cucumber_into_bowl       0.00      0.00      0.00       430
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.00      0.00      0.00       659
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.42      0.42      0.42     19284
+               macro avg       0.16      0.15      0.15     19284
+            weighted avg       0.38      0.42      0.40     19284
+
+MoC  0.2452
+AccuracyTOT  0.3113
+RecallTOT  0.2299
+PrecisionTOT  0.2511
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.37      0.63      0.47      4598
+  place_tomato_into_bowl       0.49      0.25      0.33      1259
+              cut_cheese       0.33      0.46      0.38      5119
+  place_cheese_into_bowl       0.00      0.00      0.00      1227
+             cut_lettuce       0.43      0.58      0.50      2099
+ place_lettuce_into_bowl       0.15      0.06      0.09      1062
+                add_salt       0.00      0.00      0.00       629
+             add_vinegar       1.00      0.03      0.07      1918
+                 add_oil       0.08      0.08      0.08       845
+              add_pepper       0.00      0.00      0.00       356
+            mix_dressing       0.35      0.90      0.51       278
+           peel_cucumber       0.28      0.33      0.31      2686
+            cut_cucumber       0.39      0.25      0.31      2392
+place_cucumber_into_bowl       0.00      0.00      0.00      1635
+            add_dressing       0.00      0.00      0.00         0
+         mix_ingredients       0.13      0.08      0.10      2821
+  serve_salad_onto_plate       0.00      0.00      0.00         0
+            action_start       0.00      0.00      0.00         0
+              action_end       0.00      0.00      0.00         0
+
+               micro avg       0.31      0.31      0.31     28924
+               macro avg       0.21      0.19      0.17     28924
+            weighted avg       0.32      0.31      0.27     28924
+
+MoC  0.2112
+AccuracyTOT  0.2439
+RecallTOT  0.2112
+PrecisionTOT  0.1984
+                          precision    recall  f1-score   support
+
+              cut_tomato       0.34      0.63      0.44      4598
+  place_tomato_into_bowl       0.49      0.25      0.33      1259
+              cut_cheese       0.31      0.46      0.37      5119
+  place_cheese_into_bowl       0.00      0.00      0.00      1423
+             cut_lettuce       0.39      0.58      0.47      2099
+ place_lettuce_into_bowl       0.11      0.06      0.08      1062
+                add_salt       0.00      0.00      0.00      1613
+             add_vinegar       0.49      0.16      0.24      4109
+                 add_oil       0.21      0.13      0.16      4773
+              add_pepper       0.12      0.04      0.07      2394
+            mix_dressing       0.15      0.19      0.17      1816
+           peel_cucumber       0.20      0.33      0.25      2686
+            cut_cucumber       0.17      0.25      0.21      2392
+place_cucumber_into_bowl       0.00      0.00      0.00      1635
+            add_dressing       0.05      0.04      0.04      1746
+         mix_ingredients       0.19      0.09      0.12      3746
+  serve_salad_onto_plate       0.10      0.07      0.09      3816
+            action_start       0.00      0.00      0.00         0
+              action_end       0.25      0.49      0.33      1921
+
+               micro avg       0.24      0.24      0.24     48207
+               macro avg       0.19      0.20      0.18     48207
+            weighted avg       0.23      0.24      0.21     48207
+

@@ -1,0 +1,99 @@
+SPLIT 1: RNN  ==> OBS:20% 
+MoC  0.2249
+Accuracy  0.2800
+Precision  0.2300
+Recall  0.2200
+f1-score  0.2200
+MoC  0.1685
+Accuracy  0.2000
+Precision  0.1700
+Recall  0.1700
+f1-score  0.1600
+MoC  0.1491
+Accuracy  0.1700
+Precision  0.1300
+Recall  0.1500
+f1-score  0.1300
+MoC  0.1271
+Accuracy  0.1400
+Precision  0.1100
+Recall  0.1300
+f1-score  0.1100
+SPLIT 1: RNN  ==> OBS:30% 
+MoC  0.2452
+Accuracy  0.3800
+Precision  0.2500
+Recall  0.2500
+f1-score  0.2400
+MoC  0.1507
+Accuracy  0.2900
+Precision  0.1500
+Recall  0.1400
+f1-score  0.1400
+MoC  0.1460
+Accuracy  0.2400
+Precision  0.1300
+Recall  0.1500
+f1-score  0.1300
+MoC  0.1395
+Accuracy  0.1900
+Precision  0.1400
+Recall  0.1400
+f1-score  0.1300
+MoC  0.2586
+Accuracy  0.3100
+Precision  0.2000
+Recall  0.2600
+f1-score  0.1900
+MoC  0.2334
+Accuracy  0.2900
+Precision  0.1700
+Recall  0.2300
+f1-score  0.1700
+MoC  0.2031
+Accuracy  0.2500
+Precision  0.1500
+Recall  0.1900
+f1-score  0.1600
+MoC  0.1631
+Accuracy  0.2100
+Precision  0.1100
+Recall  0.1600
+f1-score  0.1100
+SPLIT 1: CNN  ==> OBS:30% 
+MoC  0.2261
+Accuracy  0.4100
+Precision  0.2100
+Recall  0.1900
+f1-score  0.1900
+MoC  0.2786
+Accuracy  0.3300
+Precision  0.2500
+Recall  0.2600
+f1-score  0.2400
+MoC  0.2114
+Accuracy  0.2700
+Precision  0.1600
+Recall  0.1900
+f1-score  0.1600
+MoC  0.1401
+Accuracy  0.2100
+Precision  0.1500
+Recall  0.1400
+f1-score  0.1300
+SPLIT 2: RNN  ==> OBS:20% 
+SPLIT 2: RNN  ==> OBS:30% 
+SPLIT 2: CNN  ==> OBS:20% 
+SPLIT 2: CNN  ==> OBS:30% 
+SPLIT 3: RNN  ==> OBS:20% 
+SPLIT 3: RNN  ==> OBS:30% 
+SPLIT 3: CNN  ==> OBS:20% 
+SPLIT 3: CNN  ==> OBS:30% 
+SPLIT 4: RNN  ==> OBS:20% 
+SPLIT 4: RNN  ==> OBS:30% 
+SPLIT 4: CNN  ==> OBS:20% 
+SPLIT 4: CNN  ==> OBS:30% 
+SPLIT 5: RNN  ==> OBS:20% 
+SPLIT 5: RNN  ==> OBS:30% 
+SPLIT 5: CNN  ==> OBS:20% 
+SPLIT 5: CNN  ==> OBS:30% 

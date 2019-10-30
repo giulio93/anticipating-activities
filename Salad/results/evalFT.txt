@@ -1,0 +1,3 @@
+SPLIT 1: RNN  ==> OBS:20% 
+SPLIT 1: RNN  ==> OBS:30% 
+SPLIT 1: CNN  ==> OBS:30% 

@@ -29,7 +29,7 @@ parser.add_argument("--eval_epoch", type=int, default=20)
 parser.add_argument("--rnn_size", type=int, default=256)
 parser.add_argument("--num_layers", type=int, default=2)
 parser.add_argument("--max_seq_sz", type=int, default=25)
-parser.add_argument("--alpha", type=float, default=20, help="a scalar value used in normalizing the input length")
+parser.add_argument("--alpha", type=float, default=40, help="a scalar value used in normalizing the input length")
 parser.add_argument("--n_iterations", type=int, default=10, help="number of training examples corresponding to each action segment for the rnn")
 
 #CNN specific parameters
@@ -37,8 +37,8 @@ parser.add_argument("--nRows", type=int, default=512)
 parser.add_argument("--sigma", type=int, default=13, help="sigma for the gaussian smoothing step")
 
 #Test on GT or decoded input
-parser.add_argument("--input_type", default="gt", help="select input type: [\"decoded\", \"gt\"]")
-parser.add_argument("--decoded_path", default="./data/decoded/split1")
+parser.add_argument("--input_type", default="decoded", help="select input type: [\"decoded\", \"gt\"]")
+parser.add_argument("--decoded_path", default="./data/decoded/splitx")
 
 ################################################################################################################################################
 
@@ -58,7 +58,7 @@ if args.action == "train":
     batch_gen = Base_batch_generator()
     
     if args.model == "rnn":
-        #model = ModelRNN(nClasses, args.rnn_size, args.max_seq_sz, args.num_layers)
+        model = ModelRNN(nClasses, args.rnn_size, args.max_seq_sz, args.num_layers)
         batch_gen = RNN_batch_generator(nClasses, args.n_iterations, args.max_seq_sz, actions_dict, args.alpha)
     elif args.model == "cnn":
         model = ModelCNN(args.nRows, nClasses)
