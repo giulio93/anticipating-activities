@@ -1,0 +1,16 @@
+./data/groundTruth/P03_cam01_P03_tea.txt
+./save_dir/results_GT/rnn1/obs0.2-pred0.1/P03_cam01_P03_tea.recog
+./data/groundTruth/P03_cam01_P03_tea.txt
+./save_dir/results_GT/rnn1/obs0.2-pred0.5/P03_cam01_P03_tea.recog
+./data/groundTruth/P03_cam01_P03_tea.txt
+./save_dir/results_GT/rnn1/obs0.3-pred0.1/P03_cam01_P03_tea.recog
+./data/groundTruth/P03_cam01_P03_tea.txt
+./save_dir/results_GT/rnn1/obs0.3-pred0.5/P03_cam01_P03_tea.recog
+./data/groundTruth/P03_cam01_P03_tea.txt
+./save_dir/results_GT/cnn1/obs0.2-pred0.1/P03_cam01_P03_tea.recog
+./data/groundTruth/P03_cam01_P03_tea.txt
+./save_dir/results_GT/cnn1/obs0.2-pred0.5/P03_cam01_P03_tea.recog
+./data/groundTruth/P03_cam01_P03_tea.txt
+./save_dir/results_GT/cnn1/obs0.3-pred0.1/P03_cam01_P03_tea.recog
+./data/groundTruth/P03_cam01_P03_tea.txt
+./save_dir/results_GT/cnn1/obs0.3-pred0.5/P03_cam01_P03_tea.recog
