@@ -73,7 +73,7 @@ if args.action == "train":
 ##################
 elif args.action == "predict":
     pred_percentages = [.1, .2, .3, .5]
-    obs_percentages = [.2, .3]
+    obs_percentages = [.2, .3, .5]
     model_restore_path = args.model_save_path+"/epoch-"+str(args.eval_epoch)+"/model.ckpt" 
     
     if args.model == "rnn":
