@@ -135,30 +135,36 @@ elif args.action == "predict":
                    
                     start_To = start_To+T_a 
 
-        # measures =  report2dict(classification_report(target_sq, recog_sq,target_names=np.unique(target_sq+recog_sq)))
-        # print ("Accuracy  %.4f"% measures['accuracy']['acc'])
-        # print ("Precision  %.4f"% measures['macro avg']['precision'])
-        # print ("Recall  %.4f"% measures['macro avg']['recall'])
-        # print ("f1-score  %.4f"% measures['macro avg']['f1-score'])
-
-            #report2dict(classification_report(target_sq, recog_sq))
-
-        #print ("MoC  %.4f"%(float(acc)/n))
-        # print ("AccuracyTOT  %.4f"% accuracy_score(totalGT, totalRecog, normalize=True))
-        #print ("RecallTOT  %.4f"% recall_score(totalGT,totalRecog,average='macro'))
-        # print ("PrecisionTOT  %.4f"% precision_score(totalGT,totalRecog,average='macro'))
-
-        #print (measures)
-        # print ("Accuracy  %.4f"% measures['accuracy']['acc'])
-        # print ("Precision  %.4f"% measures['macro avg']['precision'])
-        # print ("Recall  %.4f"% measures['macro avg']['recall'])
-        # print ("f1-score  %.4f"% measures['macro avg']['f1-score'])
-
         report = classification_report(target_sq, recog_sq,output_dict=True)
         print ("Accuracy:  " +   str(round(accuracy_score(target_sq,recog_sq) * 100,2)))
         print ("Precision  " +  str(round(report['macro avg']['precision']*100,2)))
         print ("Recall     "    +     str(round(report['macro avg']['recall']*100,2)))
         print ("f1-score   "  +   str( round(report['macro avg']['f1-score']*100,2)))
+
+
+        n_T=np.zeros(len(actions_dict.keys()))
+        n_F=np.zeros(len(actions_dict.keys()))
+        for i in range(len(target_sq)):
+            if target_sq[i]==recog_sq[i]:
+                n_T[actions_dict[target_sq[i]]]+=1 # Se la classe per questo frame e stata riconosciuta aggiugno 1 a True
+            else:
+                n_F[actions_dict[target_sq[i]]]+=1 # Se la calss di questo frame e errata aggiungo uno a False
+        
+        acc=0
+        n=0
+        for i in range(len(actions_dict.keys())):
+            if n_T[i]+n_F[i] !=0: 
+                #Non tutte le classi vengono viste osservando e prevedendo solo una percentuale di video, 
+                #cio che non vedonon va contato nella Mean Over Classes
+                acc+=float(n_T[i])/(n_T[i]+n_F[i])      
+                #Divido il numero di predizioni corrette per una classe diviso il numero di frame che appartiene alla classe, 
+                #sommo il rating di correttezza di tutte le classi, ottenendo la media di corretteza sulla percentuale osservata e sulla percentuale di predizione.
+                n+=1 # numero di classi presenti 
+            #else: print("Never seen "+str(classes[i]))
+        #print(classes)
+        #measures =  report2dict(classification_report(totalGT, totalRecog,target_names=np.unique(totalGT+totalRecog)))
+
+        print ("MoC  %.4f"%(float(acc)/n))
             
             # for obs_p in obs_percentages:
                 
