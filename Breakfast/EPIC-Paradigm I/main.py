@@ -64,8 +64,10 @@ if args.action == "train":
     batch_gen = Base_batch_generator()
     
     if args.model == "rnn":
+        T_o = int(args.To)
+        T_a = int(args.Ta)
         model = ModelRNN(nClasses, args.rnn_size, args.max_seq_sz, args.num_layers)
-        batch_gen = RNN_batch_generator(nClasses, args.n_iterations, args.max_seq_sz, actions_dict, args.alpha)
+        batch_gen = RNN_batch_generator(nClasses, args.n_iterations, args.max_seq_sz, actions_dict, args.alpha,T_o,T_a)
     elif args.model == "cnn":
         model = ModelCNN(args.nRows, nClasses)
         batch_gen = CNN_batch_generator(args.nRows, nClasses, actions_dict)
@@ -80,11 +82,13 @@ if args.action == "train":
 elif args.action == "predict":
     pred_percentages = [.1, .2, .3, .5]
     obs_percentages = [.2, .3]
+    T_o = int(args.To)
+    T_a = int(args.Ta)
     model_restore_path = args.model_save_path+"/epoch-"+str(args.eval_epoch)+"/model.ckpt" 
     
     if args.model == "rnn":
         model = ModelRNN(nClasses, args.rnn_size, args.max_seq_sz, args.num_layers)
-        batch_gen = RNN_batch_generator(nClasses, args.n_iterations, args.max_seq_sz, actions_dict, args.alpha)
+        batch_gen = RNN_batch_generator(nClasses, args.n_iterations, args.max_seq_sz, actions_dict, args.alpha,T_o,T_a)
         batch_gen.read_data(list_of_videos)
         recog_sq = []
         target_sq = []
@@ -93,8 +97,6 @@ elif args.action == "predict":
             f_name = vid.split('/')[-1].split('.')[0]
             observed_content=[]
             vid_len = 0
-            T_o = int(args.To)
-            T_a = int(args.Ta)
             max_sq_len = 0
 
             if args.input_type == "gt":

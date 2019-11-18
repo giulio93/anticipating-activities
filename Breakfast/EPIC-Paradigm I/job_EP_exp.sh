@@ -4,8 +4,8 @@ source /venv/bin/activate
 echo "START "
 
 echo "SPLIT 1 ==> EP 15-15 "
-python main.py --model=rnn --To=15 --Ta=15 --action=train --vid_list_file=./data/test.split1.deb.bundle  --model_save_path=./save_dir/models_15_15/rnn1 --results_save_path=./save_dir/results_15_15/rnn1 
-python main.py --model=rnn --To=15 --Ta=15 --action=predict  --vid_list_file=./data/test.split1.deb.bundle --model_save_path=./save_dir/models_15_15/rnn1 --results_save_path=./save_dir/results_15_15/rnn1  --input_type=gt
+python main.py --model=rnn --To=15 --Ta=15 --action=train --vid_list_file=./data/train.split1.bundle  --model_save_path=./save_dir/models_15_15/rnn1 --results_save_path=./save_dir/results_15_15/rnn1 
+python main.py --model=rnn --To=15 --Ta=15 --action=predict  --vid_list_file=./data/test.split1.bundle --model_save_path=./save_dir/models_15_15/rnn1 --results_save_path=./save_dir/results_15_15/rnn1  --input_type=gt
 echo "SPLIT 2 ==> EP 15-15 "
 python main.py --model=rnn --To=15 --Ta=15 --action=train --vid_list_file=./data/train.split2.bundle  --model_save_path=./save_dir/models_15_15/rnn2 --results_save_path=./save_dir/results_15_15/rnn2 
 python main.py --model=rnn --To=15 --Ta=15 --action=predict  --vid_list_file=./data/test.split2.bundle  --model_save_path=./save_dir/models_15_15/rnn2 --results_save_path=./save_dir/results_15_15/rnn2  --input_type=gt

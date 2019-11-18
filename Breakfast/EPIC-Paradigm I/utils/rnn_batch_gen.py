@@ -10,18 +10,20 @@ from plotly.subplots import make_subplots
 
 class RNN_batch_generator(Base_batch_generator):
     
-    def __init__(self, nClasses, n_iterations, max_seq_sz, actions_dict, alpha):
+    def __init__(self, nClasses, n_iterations, max_seq_sz, actions_dict, alpha,T_o,T_a):
         super(RNN_batch_generator, self).__init__()
         self.n_iterations = n_iterations
         self.nClasses = nClasses
         self.max_seq_sz = max_seq_sz
         self.actions_dict = actions_dict
         self.alpha = alpha
+        self.T_o = T_o
+        self.T_a = T_a
 
     def read_data(self, list_of_videos):
         
-        T_o = 30
-        T_a = 30
+        T_o = self.T_o
+        T_a = self.T_a
         max_sq_len = 0
         totLabels= []
        
