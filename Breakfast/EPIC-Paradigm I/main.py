@@ -127,7 +127,7 @@ elif args.action == "predict":
                         max_sq_len = seq_len
 
                     for j in range(args.max_seq_sz - seq_len):
-                            p_seq.append(np.zeros((nClasses+1)))
+                        p_seq.append(np.zeros((nClasses+1)))
 
                     with tf.Session() as sess:
                        label = model.predict(sess, model_restore_path, p_seq ,actions_dict, T)
@@ -137,12 +137,21 @@ elif args.action == "predict":
                    
                     start_To = start_To+T_a 
 
+        
+        # f_name = vid.split('/')[-1].split('.')[0]
+        # path=args.results_save_path+"/obs"+str(T_o)+"-alpha"+str(T_a)
+        # write_predictions(path, f_name, recog_sq)
+        # write_predictions(path,f_name+"_target", target_sq)
+        
+        
         report = classification_report(target_sq, recog_sq,output_dict=True)
         print ("Accuracy:  " +   str(round(accuracy_score(target_sq,recog_sq) * 100,2)))
         print ("Precision  " +  str(round(report['macro avg']['precision']*100,2)))
         print ("Recall     "    +     str(round(report['macro avg']['recall']*100,2)))
         print ("f1-score   "  +   str( round(report['macro avg']['f1-score']*100,2)))
 
+        #write results to file
+    
 
         n_T=np.zeros(len(actions_dict.keys()))
         n_F=np.zeros(len(actions_dict.keys()))
@@ -167,6 +176,8 @@ elif args.action == "predict":
         #measures =  report2dict(classification_report(totalGT, totalRecog,target_names=np.unique(totalGT+totalRecog)))
 
         print ("MoC  %.4f"%(float(acc)/n))
+
+        
             
             # for obs_p in obs_percentages:
                 

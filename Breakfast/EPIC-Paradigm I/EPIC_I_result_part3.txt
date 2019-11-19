@@ -1,0 +1,28 @@
+START 
+SPLIT 1 ==> EP 30-15 
+('Epoch', 1, 'completed out of', 20, 'epoch loss: 1.24')
+('Epoch', 2, 'completed out of', 20, 'epoch loss: 0.82')
+('Epoch', 3, 'completed out of', 20, 'epoch loss: 0.81')
+('Epoch', 4, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 5, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 6, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 7, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 8, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 9, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 10, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 11, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 12, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 13, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 14, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 15, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 16, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 17, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 18, 'completed out of', 20, 'epoch loss: 0.80')
+('Epoch', 19, 'completed out of', 20, 'epoch loss: 0.79')
+('Epoch', 20, 'completed out of', 20, 'epoch loss: 0.79')
+Accuracy:  95.28
+Precision  91.39
+Recall     90.29
+f1-score   90.38
+MoC  0.9029
+SPLIT 2 ==> EP 30-15
