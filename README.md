@@ -2,10 +2,11 @@
 
 This repository provides a TensorFlow implementation of the paper [When will you do what? - Anticipating Temporal Occurrences of Activities](https://pages.iai.uni-bonn.de/gall_juergen/download/jgall_anticipation_cvpr18.pdf).
 
-This is a forked branch that i made for my thesis,i add code from other experiments that are listed in the paper like: *Intersection Over Union 
-*Direct Feature CNN model
-*Number of action predicted 
-*I add some other evaluation metric like: accuracy, precision, recall, F1-score.
+This is a forked branch that i made for my thesis,i add code from other experiments that are listed in the paper like: 
+* Intersection Over Union 
+* Direct Feature CNN model
+* Number of action predicted 
+* I add some other evaluation metric like: accuracy, precision, recall, F1-score.
 
 ### Model and data used ###
 Models and data used to retrive results in this repository are published in this MEGA folder:
