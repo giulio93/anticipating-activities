@@ -1,0 +1,11 @@
+#boundle
+./data/groundTruth/rgb-23-1.txt
+./data/groundTruth/rgb-23-2.txt
+./data/groundTruth/rgb-24-1.txt
+./data/groundTruth/rgb-24-2.txt
+./data/groundTruth/rgb-25-1.txt
+./data/groundTruth/rgb-25-2.txt
+./data/groundTruth/rgb-26-1.txt
+./data/groundTruth/rgb-26-2.txt
+./data/groundTruth/rgb-27-1.txt
+./data/groundTruth/rgb-27-2.txt
