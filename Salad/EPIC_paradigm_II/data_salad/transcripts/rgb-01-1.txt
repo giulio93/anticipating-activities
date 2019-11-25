@@ -1,0 +1,15 @@
+action_start
+cut_tomato
+place_tomato_into_bowl
+cut_tomato
+place_tomato_into_bowl
+cut_cheese
+place_cheese_into_bowl
+cut_lettuce
+place_lettuce_into_bowl
+add_salt
+add_vinegar
+add_oil
+add_pepper
+mix_dressing
+action_end

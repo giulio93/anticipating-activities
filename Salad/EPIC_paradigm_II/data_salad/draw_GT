@@ -1,0 +1,16 @@
+./data/groundTruth/rgb-01-2.txt
+./save_dir/results_GT/rnn1/obs0.2-pred0.1/rgb-01-2.recog
+./data/groundTruth/rgb-01-2.txt
+./save_dir/results_GT/rnn1/obs0.2-pred0.5/rgb-01-2.recog
+./data/groundTruth/rgb-01-2.txt
+./save_dir/results_GT/rnn1/obs0.3-pred0.1/rgb-01-2.recog
+./data/groundTruth/rgb-01-2.txt
+./save_dir/results_GT/rnn1/obs0.3-pred0.5/rgb-01-2.recog
+./data/groundTruth/rgb-01-2.txt
+./save_dir/results_GT/cnn1/obs0.2-pred0.1/rgb-01-2.recog
+./data/groundTruth/rgb-01-2.txt
+./save_dir/results_GT/cnn1/obs0.2-pred0.5/rgb-01-2.recog
+./data/groundTruth/rgb-01-2.txt
+./save_dir/results_GT/cnn1/obs0.3-pred0.1/rgb-01-2.recog
+./data/groundTruth/rgb-01-2.txt
+./save_dir/results_GT/cnn1/obs0.3-pred0.5/rgb-01-2.recog
