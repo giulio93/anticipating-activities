@@ -7,9 +7,9 @@ import re
 from sklearn.metrics import accuracy_score,recall_score,precision_score,f1_score
 from sklearn.metrics import classification_report
 from collections import defaultdict
-from utils.helper_functions import separator
+#from utils.helper_functions import separator
 import os
-import plotly.graph_objects as go
+#import plotly.graph_objects as go
 
 
 def read_sequences(filename, recog_dir):
@@ -18,7 +18,7 @@ def read_sequences(filename, recog_dir):
     with open(gt_file, 'r') as f:
         ground_truth = f.read().split('\n')[1].split()
         f.close()
-    # read recognized sequence
+    # read recognized sequence 
     with open(filename, 'r') as f:
         recognized = f.read().split('\n')[1].split()
         f.close()
@@ -29,7 +29,7 @@ def read_sequences(filename, recog_dir):
 parser = argparse.ArgumentParser()
 parser.add_argument('--recog_dir')
 parser.add_argument("--mapping_file", default="./data/mapping_bf.txt")
-parser.add_argument('--ground_truth_path', default='./data/groundTruth')
+parser.add_argument('--ground_truth_path')
 parser.add_argument('--filelist', default='./data/groundTruth/')
 
 args = parser.parse_args()

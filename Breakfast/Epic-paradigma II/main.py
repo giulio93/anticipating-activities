@@ -31,7 +31,7 @@ parser.add_argument("--eval_epoch", type=int, default=20)
 #RNN specific parameters
 parser.add_argument("--rnn_size", type=int, default=256)
 parser.add_argument("--num_layers", type=int, default=2)
-parser.add_argument("--max_seq_sz", type=int, default=6)
+parser.add_argument("--max_seq_sz", type=int, default=25)
 parser.add_argument("--alpha", type=float, default=12, help="a scalar value used in normalizing the input length")
 parser.add_argument("--n_iterations", type=int, default=10, help="number of training examples corresponding to each action segment for the rnn")
 
@@ -46,7 +46,7 @@ parser.add_argument("--decoded_path", default="./data/decoded/split1")
 #Observation and predction time for EPIC-Kitchen paradigm, T_o e T_a needs to be expressed in frames, please take into account that for Breakfast and Salad both are sampled with 15fps
 parser.add_argument("--S_enc", default=6)
 parser.add_argument("--S_ant", default=8)
-parser.add_argument("--beta", default=0.25)
+parser.add_argument("--beta", default=0.50)
 
 ################################################################################################################################################
 
@@ -112,93 +112,87 @@ elif args.action == "predict":
                 content = file_ptr.read().split()[:-1]
                 vid_len = len(content)
                 T = (1.0/args.alpha)*vid_len
+            
+            if args.input_type == "decoded":
+                start_To=0  
+                file_ptr = open(args.decoded_path+"/obs-0.3/"+f_name+'.txt', 'r') 
+                content = file_ptr.read().split('\n')[:-1]
+                vid_len = int(len(content)) #The real lenght
                 
-                for init in range(8):
-                    recog_sq[str(init)] = ["start"]
-                for init in range(8):
-                    target_sq[str(init)] = ["start"]
+            for init in range(8):
+                recog_sq[str(init)] = ["start"]
+            for init in range(8):
+                target_sq[str(init)] = ["start"]
 
 
-
-                while start_To+S_enc_frame+S_ant_frame+beta_frame < len(content):    
-
-                    k=0
-                    for stride in range(start_To+S_enc_frame+beta_frame,start_To+S_enc_frame+S_ant_frame+beta_frame,beta_frame):
-                        obs  = content[start_To:start_To+stride] 
-                        target = content[start_To+S_enc_frame+S_ant_frame+beta_frame]
-                        label_seq, length_seq = get_label_length_seq(obs)
-                        #What i'm actually obeserving. p_seq is a matrix of 48 columns like classes + 1 where it stores the lenght of the action
-                        #Morover  it has 25 rows beacuse the max number in a video is 25 for breakfast
-                        p_seq = []
-                        seq_len = 0
-                        for i in label_seq:
+            T = (1.0/args.alpha)*vid_len
+            while start_To+S_enc_frame+S_ant_frame+beta_frame < len(content):    
+                k=0
+                for stride in range(start_To+S_enc_frame+beta_frame,start_To+S_enc_frame+S_ant_frame+beta_frame,beta_frame):
+                    obs  = content[start_To:start_To+stride] 
+                    target = content[start_To+S_enc_frame+S_ant_frame+beta_frame]
+                    label_seq, length_seq = get_label_length_seq(obs)
+                    #What i'm actually obeserving. p_seq is a matrix of 48 columns like classes + 1 where it stores the lenght of the action
+                    #Morover  it has 25 rows beacuse the max number in a video is 25 for breakfast
+                    p_seq = []
+                    seq_len = 0
+                    for i in label_seq:
+                        p_seq.append(np.zeros((nClasses+1)))
+                        #Lenght of the action obeserved
+                        p_seq[-1][-1] = length_seq[label_seq.index(i)]/T
+                        #1-hot encoding
+                        p_seq[-1][actions_dict[i]] = 1
+                        seq_len += 1
+                    #padding to zero every other free slot               
+                    if(seq_len > max_sq_len):
+                        max_sq_len = seq_len
+                    for j in range(args.max_seq_sz - seq_len):
                             p_seq.append(np.zeros((nClasses+1)))
-                            #Lenght of the action obeserved
-                            p_seq[-1][-1] = length_seq[label_seq.index(i)]/T
-                            #1-hot encoding
-                            p_seq[-1][actions_dict[i]] = 1
-                            seq_len += 1
-                        #padding to zero every other free slot               
-                        if(seq_len > max_sq_len):
-                            max_sq_len = seq_len
-
-                        for j in range(args.max_seq_sz - seq_len):
-                                p_seq.append(np.zeros((nClasses+1)))
-
-                        with tf.Session() as sess:
-                           label = model.predict(sess, model_restore_path, p_seq ,actions_dict, T)
-
-                        # recog_sq.append(label)
-                        # target_sq.append(target)
-
-                        
-                        recog_sq[str(k)].append(label)
-                        target_sq[str(k)].append(target)
-
-                        k+=1                      
-                    start_To = start_To+S_enc_frame 
-
-
-                for m in range(len(recog_sq.keys())):
+                    with tf.Session() as sess:
+                       label = model.predict(sess, model_restore_path, p_seq ,actions_dict, T)
+                    # recog_sq.append(label)
+                    # target_sq.append(target)
                     
-                    target = target_sq[str(m)][1:]
-                    recog  =  recog_sq[str(m)][1:]
+                    recog_sq[str(k)].append(label)
+                    target_sq[str(k)].append(target)
+                    k+=1                      
+                start_To = start_To+S_enc_frame 
 
-                    f_name = vid.split('/')[-1].split('.')[0]
-                    path=args.results_save_path+"/obs"+str(int(args.S_enc))+"-pred"+str(m)
-                    write_predictions(path, f_name, recog)
-                    path=args.results_save_path+"/obs"+str(int(args.S_enc))+"-pred"+str(m)+"_target"
-                    write_predictions(path,f_name+"_target", target)
-
-                    report = classification_report(target, recog,output_dict=True)
-                    print ("Accuracy:  " +   str(round(accuracy_score(target,recog) * 100,2)))
-                    print ("Precision  " +  str(round(report['macro avg']['precision']*100,2)))
-                    print ("Recall     "    +     str(round(report['macro avg']['recall']*100,2)))
-                    print ("f1-score   "  +   str( round(report['macro avg']['f1-score']*100,2)))
-
-
-                    n_T=np.zeros(len(actions_dict.keys()))
-                    n_F=np.zeros(len(actions_dict.keys()))
-                    for i in range(len(target)):
-                        if target[i]==recog[i]:
-                            n_T[actions_dict[target[i]]]+=1 # Se la classe per questo frame e stata riconosciuta aggiugno 1 a True
-                        else:
-                            n_F[actions_dict[target[i]]]+=1 # Se la calss di questo frame e errata aggiungo uno a False
-                    
-                    acc=0
-                    n=0
-                    for i in range(len(actions_dict.keys())):
-                        if n_T[i]+n_F[i] !=0: 
-                            #Non tutte le classi vengono viste osservando e prevedendo solo una percentuale di video, 
-                            #cio che non vedonon va contato nella Mean Over Classes
-                            acc+=float(n_T[i])/(n_T[i]+n_F[i])      
-                            #Divido il numero di predizioni corrette per una classe diviso il numero di frame che appartiene alla classe, 
-                            #sommo il rating di correttezza di tutte le classi, ottenendo la media di corretteza sulla percentuale osservata e sulla percentuale di predizione.
-                            n+=1 # numero di classi presenti 
-                        #else: print("Never seen "+str(classes[i]))
-                    #print(classes)
-                    #measures =  report2dict(classification_report(totalGT, totalRecog,target_names=np.unique(totalGT+totalRecog)))
-
-                    print ("MoC  %.4f"%(float(acc)/n))
+            for m in range(len(recog_sq.keys())):
+                
+                target = target_sq[str(m)][1:]
+                recog  =  recog_sq[str(m)][1:]
+                f_name = vid.split('/')[-1].split('.')[0]
+                path=args.results_save_path+"/obs"+str(int(args.S_enc))+"-pred"+str(m)
+                write_predictions(path, f_name, recog)
+                path=args.results_save_path+"/obs"+str(int(args.S_enc))+"-pred"+str(m)+"_target"
+                write_predictions(path,f_name+"_target", target)
+                # report = classification_report(target, recog,output_dict=True)
+                # print ("Accuracy:  " +   str(round(accuracy_score(target,recog) * 100,2)))
+                # print ("Precision  " +  str(round(report['macro avg']['precision']*100,2)))
+                # print ("Recall     "    +     str(round(report['macro avg']['recall']*100,2)))
+                # print ("f1-score   "  +   str( round(report['macro avg']['f1-score']*100,2)))
+                # n_T=np.zeros(len(actions_dict.keys()))
+                # n_F=np.zeros(len(actions_dict.keys()))
+                # for i in range(len(target)):
+                #     if target[i]==recog[i]:
+                #         n_T[actions_dict[target[i]]]+=1 # Se la classe per questo frame e stata riconosciuta aggiugno 1 a True
+                #     else:
+                #         n_F[actions_dict[target[i]]]+=1 # Se la calss di questo frame e errata aggiungo uno a False
+                
+                # acc=0
+                # n=0
+                # for i in range(len(actions_dict.keys())):
+                #     if n_T[i]+n_F[i] !=0: 
+                #         #Non tutte le classi vengono viste osservando e prevedendo solo una percentuale di video, 
+                #         #cio che non vedonon va contato nella Mean Over Classes
+                #         acc+=float(n_T[i])/(n_T[i]+n_F[i])      
+                #         #Divido il numero di predizioni corrette per una classe diviso il numero di frame che appartiene alla classe, 
+                #         #sommo il rating di correttezza di tutte le classi, ottenendo la media di corretteza sulla percentuale osservata e sulla percentuale di predizione.
+                #         n+=1 # numero di classi presenti 
+                #     #else: print("Never seen "+str(classes[i]))
+                # #print(classes)
+                # #measures =  report2dict(classification_report(totalGT, totalRecog,target_names=np.unique(totalGT+totalRecog)))
+                # print ("MoC  %.4f"%(float(acc)/n))
             
         

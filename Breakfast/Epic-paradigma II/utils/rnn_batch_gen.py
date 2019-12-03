@@ -79,7 +79,7 @@ class RNN_batch_generator(Base_batch_generator):
 
                 start_To = start_To+S_enc_frame 
 
-            
+            print("Max sq len"+str(max_sq_len))
             random.shuffle(self.list_of_examples)
 
         return

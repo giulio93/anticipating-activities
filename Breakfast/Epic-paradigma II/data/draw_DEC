@@ -1,0 +1,16 @@
+./data/groundTruth/P42_cam02_P42_coffee.txt
+./save_dir/results/rnn4/obs0.2-pred0.1/P42_cam02_P42_coffee.recog
+./data/groundTruth/P42_cam02_P42_coffee.txt
+./save_dir/results/rnn4/obs0.2-pred0.5/P42_cam02_P42_coffee.recog
+./data/groundTruth/P42_cam02_P42_coffee.txt
+./save_dir/results/rnn4/obs0.3-pred0.1/P42_cam02_P42_coffee.recog
+./data/groundTruth/P42_cam02_P42_coffee.txt
+./save_dir/results/rnn4/obs0.3-pred0.5/P42_cam02_P42_coffee.recog
+./data/groundTruth/P42_cam02_P42_coffee.txt
+./save_dir/results/cnn4/obs0.2-pred0.1/P42_cam02_P42_coffee.recog
+./data/groundTruth/P42_cam02_P42_coffee.txt
+./save_dir/results/cnn4/obs0.2-pred0.5/P42_cam02_P42_coffee.recog
+./data/groundTruth/P42_cam02_P42_coffee.txt
+./save_dir/results/cnn4/obs0.3-pred0.1/P42_cam02_P42_coffee.recog
+./data/groundTruth/P42_cam02_P42_coffee.txt
+./save_dir/results/cnn4/obs0.3-pred0.5/P42_cam02_P42_coffee.recog

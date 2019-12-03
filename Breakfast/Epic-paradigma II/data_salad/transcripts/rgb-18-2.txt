@@ -1,0 +1,15 @@
+action_start
+add_salt
+add_pepper
+add_oil
+add_vinegar
+cut_lettuce
+peel_cucumber
+cut_cucumber
+cut_tomato
+cut_cheese
+place_tomato_into_bowl
+mix_ingredients
+serve_salad_onto_plate
+add_dressing
+action_end

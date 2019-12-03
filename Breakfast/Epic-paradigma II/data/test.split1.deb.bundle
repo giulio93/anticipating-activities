@@ -1,0 +1,5 @@
+#bundle
+./data/groundTruth/P03_cam01_P03_cereals.txt
+./data/groundTruth/P16_cam01_P16_friedegg.txt
+./data/groundTruth/P16_cam01_P16_juice.txt
+./data/groundTruth/P16_cam01_P16_milk.txt
